@@ -1,0 +1,22 @@
+@import url("https://rsms.me/inter/inter-ui.css");
+::-moz-selection {
+  color: #f7f8f6;
+  background: #bae996; }
+::selection {
+  color: #f7f8f6;
+  background: #bae996; }
+
+* {
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-kerning: auto;
+          font-kerning: auto; }
+
+html {
+  -webkit-text-size-adjust: 100%; }
+
+body {
+  font-family: "Inter UI", sans-serif;
+  font-size: 17px;
+  color: #57674c; }
