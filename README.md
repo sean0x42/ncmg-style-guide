@@ -6,6 +6,7 @@ A style guide for the North Coast Marble &amp; Granite website. Hosted with GitH
 This style guide provides a set of ground rules for each of the following:
 
 * Branding
+  - Spacing
 * Colour
   - Palette
   - Sass variables
@@ -17,7 +18,7 @@ This style guide provides a set of ground rules for each of the following:
   - Line height
   - Line length
   - Sass variables
-* Spacing
+  - Spacing
 * Components
   - Buttons
   - Text inputs
