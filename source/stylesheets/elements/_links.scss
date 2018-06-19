@@ -1,0 +1,9 @@
+a {
+  color: darken($primary, 6%);
+  text-decoration: none;
+  cursor: pointer;
+
+  &:hover {
+    text-decoration: underline;
+  }
+}

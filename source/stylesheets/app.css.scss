@@ -1,6 +1,7 @@
 // Settings
 @import "settings/colours";
 @import "settings/fonts";
+@import "settings/misc";
 
 // Mixins
 @import "mixins/hidden";
@@ -13,7 +14,16 @@
 
 // Elements
 @import "elements/body";
+@import "elements/links";
+@import "elements/article";
+@import "elements/headings";
+@import "elements/paragraph";
+@import "elements/code";
 
 // Components
 @import "components/wrapper";
 @import "components/header";
+@import "components/navigation";
+@import "components/footer";
+@import "components/wave";
+@import "components/palette";

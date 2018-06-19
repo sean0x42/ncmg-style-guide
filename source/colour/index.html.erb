@@ -1,0 +1,69 @@
+---
+title: Colour
+---
+
+<article>
+  <header>
+    <h1>Standard Colours</h1>
+    <p>A deep dive into the colour palette of North Coast Marble &amp; Granite, its history, and its future on the web.</p>
+    <a href="#skip-discussion">Skip discussion.</a>
+    <svg viewBox="0 -2 270 24" class="wave">
+      <path d="M0,0.7c13.5,0,13.5,18,27,18c13.5,0,13.5-18,27-18c13.5,0,13.5,18,27,18c13.5,0,13.5-18,27-18 c13.5,0,13.5,18,27,18c13.5,0,13.5-18,27-18c13.5,0,13.5,18,27,18c13.5,0,13.5-18,27-18c13.5,0,13.5,18,27,18c13.5,0,13.5-18,27-18" />
+    </svg>
+  </header>
+
+  <section>
+    <h2>Why bother?</h2>
+    <p>Colour is the most important tool in a designer's belt. It establishes a brand's identity, and the emotions we feel when we engage with it. So it's vital that we pick a palette that feels right.</p>
+
+    <p>We're aiming for a modern, professional look. Something reliable, trustworthy, but not without a hint of rigour. So it's time to look back on the history of NCMG's colour palette, to decide what stays, and what goes.</p>
+  </section>
+
+  <section>
+    <h2>Embracing history</h2>
+    <p>Just in case you've forgotten, here's what the original site looked like. Errors messages and all.</p>
+    
+    <%= image_tag 'original.png' %>
+
+    <div class="thin-palette">
+      <div style="background: #9fbc5e;"></div>
+      <div style="background: #3a3634;"></div>
+      <div style="background: #898784;"></div>
+      <div style="background: #e9e8e4;"></div>
+    </div>
+
+    <p>The result is a colour palette that (in my opinion) feels <em>washed out</em> or <em>bland</em>. As a result, we as viewers feel the same emotions towards NCMG. Obviously, that needs to change, but we'll use the existing colour palette as a jumping off point.</p>
+  </section>
+
+  <section id="skip-discussion">
+    <h2>A fresh coat of paint</h2>
+    <p>After reworking the above palette, here's what I came up with. Each colour has a corresponding Sass variable (hence the dollar sign). There is also an <em>inverted</em> variant of each colour grouping, accessible with the <code>-inverted</code> suffix. The inverted colour can be used for text or elements on top of it's corresponding colour.</p>
+  </section>
+
+  <div class="palettes">
+
+    <!-- Zesty -->
+    <div class="palette" style="color: hsl(145, 15%, 99%);">
+      <div style="background: #28b262;"><pre>$zesty-dark</pre></div>
+      <div style="background: hsl(145, 63%, 47%);"><pre>$zesty</pre></div>
+      <div style="background: #52cd85;"><pre>$zesty-light</pre></div>
+      <div style="background: #78d8a0;"><pre>$zesty-lighter</pre></div>
+    </div>
+
+    <!-- Licorice -->
+    <div class="palette" style="color: hsl(145, 15%, 99%);">
+      <div style="background: #242929;"><pre>$licorice-dark</pre></div>
+      <div style="background: #272d2d;"><pre>$licorice</pre></div>
+      <div style="background: #3a4040;"><pre>$licorice-light</pre></div>
+      <div style="background: #4e5353;"><pre>$licorice-lighter</pre></div>
+    </div>
+
+    <!-- Creme -->
+    <div class="palette" style="color: #5c7064;border: 1px solid #8fa397;">
+      <div style="background: white;"><pre>$creme</pre></div>
+    </div>
+
+  </div>
+  
+
+</article>

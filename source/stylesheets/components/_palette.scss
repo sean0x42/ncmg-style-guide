@@ -1,0 +1,34 @@
+.thin-palette {
+  width: 100%;
+  border-radius: $border-radius;
+  overflow: hidden;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  height: 40px;
+  margin: 3rem 0;
+}
+
+.palettes {
+  width: 100%;
+  display: grid;
+  grid-gap: 1.5rem;
+  margin: 3rem 0;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  align-items: flex-start;
+
+  .palette {
+    border-radius: $border-radius;
+    overflow: hidden;
+    text-align: center;
+
+    & > div {
+      padding: 1rem;
+    }
+
+    pre {
+      font-family: 'Roboto Mono', monospace;
+      margin: 0;
+      font-size: 85%;
+    }
+  }
+}

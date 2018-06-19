@@ -1,6 +1,15 @@
 .header {
+  margin-bottom: 6rem;
+
   .wrapper {
     display: flex;
     align-items: center;
+    justify-content: space-between;
   }
+
+  .logo {
+    display: block;
+    height: 25px;
+  }
+
 }

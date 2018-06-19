@@ -1,0 +1,12 @@
+code {
+  font-family: 'Roboto Mono', monospace;
+  background: lighten($border, 10%);
+  padding: 1px 0;
+  border-radius: $border-radius;
+  font-size: 85%;
+
+  &:before,
+  &:after {
+    content: '\00a0';
+  }
+}
