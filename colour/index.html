@@ -5,35 +5,152 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=1, maximum-scale: 1.0"/>
   <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-  <link href="https://fonts.googleapis.com/css?family=Roboto+Mono" rel="stylesheet"> 
+  <link href="https://fonts.googleapis.com/css?family=Roboto+Mono:400,700" rel="stylesheet"> 
   <link href="../stylesheets/modern-normalize.css" rel="stylesheet" /><link href="../stylesheets/app.css" rel="stylesheet" />
 </head>
 <body>
   <div class="header">
   <div class="wrapper">
-<a href="/">      <img src="../images/logo.svg" class="logo" alt="North Coast Marble &amp; Granite" />
+<a href="">      <img src="../images/logo.svg" class="logo" alt="North Coast Marble &amp; Granite" />
 </a>
     <ul class="navigation">
-      <li><a href="/branding">Branding</a></li>
-      <li><a href="/colour">Colour</a></li>
-      <li><a href="/icons">Icons</a></li>
-      <li><a href="/type">Type</a></li>
-      <li><a href="/components">Components</a></li>
+      <li><a href="branding">Branding</a></li>
+      <li><a href="colour">Colour</a></li>
+      <li><a href="icons">Icons</a></li>
+      <li><a href="type">Type</a></li>
+      <li><a href="components">Components</a></li>
     </ul>
 
   </div>
 </div>
   <article>
   <header>
-    <h1>Standard Colours</h1>
+    <h1>Colours</h1>
     <p>A deep dive into the colour palette of North Coast Marble &amp; Granite, its history, and its future on the web.</p>
-    <a href="#skip-discussion">Skip discussion.</a>
-    <svg viewBox="0 -2 270 24" class="wave">
-      <path d="M0,0.7c13.5,0,13.5,18,27,18c13.5,0,13.5-18,27-18c13.5,0,13.5,18,27,18c13.5,0,13.5-18,27-18 c13.5,0,13.5,18,27,18c13.5,0,13.5-18,27-18c13.5,0,13.5,18,27,18c13.5,0,13.5-18,27-18c13.5,0,13.5,18,27,18c13.5,0,13.5-18,27-18" />
-    </svg>
   </header>
 
   <section>
+    <h2>A fresh coat of paint</h2>
+    <p>Before I dive into a lengthy discussion, let's take a look at the final product. Each colour has a corresponding Sass variable (hence the dollar sign). There is also an <em>inverted</em> variant of each colour grouping, accessible with the <code>-inverted</code> suffix. The inverted colour can be used for text or elements on top of it's corresponding colour.</p>
+  </section>
+
+  <div class="palettes">
+
+    <!-- Zesty -->
+    <div class="palette" style="color: hsl(145, 15%, 99%);">
+      <div style="background: hsl(145, 63%, 43%);"><pre>$zesty-dark</pre></div>
+      <div style="background: hsl(145, 63%, 47%);"><pre>$zesty</pre></div>
+      <div style="background: hsl(145, 55%, 56%);"><pre>$zesty-light</pre></div>
+      <div style="background: hsl(145, 55%, 66%);"><pre>$zesty-lighter</pre></div>
+    </div>
+
+    <!-- Licorice -->
+    <div class="palette" style="color: hsl(180, 15%, 98%);">
+      <div style="background: hsl(180, 6%, 15%);"><pre>$licorice-dark</pre></div>
+      <div style="background: hsl(180, 7%, 16%);"><pre>$licorice</pre></div>
+      <div style="background: hsl(180, 5%, 24%);"><pre>$licorice-light</pre></div>
+      <div style="background: hsl(180, 3%, 32%);"><pre>$licorice-lighter</pre></div>
+    </div>
+
+    <!-- Grey -->
+    <div class="palette" style="color: hsl(145, 15%, 30%);">
+      <div style="background: hsl(145, 7%, 86%);"><pre>$grey</pre></div>
+      <div style="background: hsl(145, 20%, 94%);"><pre>$grey-light</pre></div>
+      <div style="background: hsl(0, 0%, 100%); border: 2px solid hsl(145, 7%, 86%);border-top: none;color: hsl(145, 10%, 36%);"><pre>$creme</pre></div>
+    </div>
+
+    <!-- Danger -->
+    <div class="palette" style="color: hsl(8, 15%, 98%);">
+      <div style="background: hsl(8, 76%, 62%);"><pre>$danger-dark</pre></div>
+      <div style="background: hsl(8, 100%, 68%);"><pre>$danger</pre></div>
+      <div style="background: hsl(8, 100%, 74%);"><pre>$danger-light</pre></div>
+      <div style="background: hsl(8, 100%, 76%);"><pre>$danger-lighter</pre></div>
+    </div>
+  </div>
+
+  <section>
+    <h2>Non-Sass environments</h2>
+    <p>If you need the branding colours outside of a Sass related environment (Photoshop, Illustrator etc.) then the following colour codes may come in handy.</p>
+
+    <div class="colour-map">
+
+      <!-- Zesty -->
+      <div style="background: hsl(145, 63%, 47%);"></div>
+      <ul>
+        <li><strong>HSL:</strong> 145&deg;, 63%, 47%</li>
+        <li><strong>RGB:</strong> 44, 195, 107</li>
+        <li><strong>Hex:</strong> #2CC36B</li>
+        <li><strong>CMYK:</strong> 77, 0, 45, 24</li>
+      </ul>
+
+      <!-- Licorice -->
+      <div style="background: #262C2C;"></div>
+      <ul>
+        <li><strong>HSL:</strong> 180&deg;, 7%, 16%</li>
+        <li><strong>RGB:</strong> 38, 44, 44</li>
+        <li><strong>Hex:</strong> #262C2C</li>
+        <li><strong>CMYK:</strong> 14, 0, 0, 83</li>
+      </ul>
+
+      <!-- Grey -->
+      <div style="background: hsl(145, 7%, 86%);"></div>
+      <ul>
+        <li><strong>HSL:</strong> 145&deg;, 7%, 86%</li>
+        <li><strong>RGB:</strong> 217, 222, 219</li>
+        <li><strong>Hex:</strong> #D9DEDB</li>
+        <li><strong>CMYK:</strong> 2, 0, 1, 13</li>
+      </ul>
+
+      <!-- Creme -->
+      <div style="background: hsl(0, 0%, 100%); border: 2px solid hsl(145, 7%, 86%);"></div>
+      <ul>
+        <li><strong>HSL:</strong> 0&deg;, 0%, 100%</li>
+        <li><strong>RGB:</strong> 255, 255, 255</li>
+        <li><strong>Hex:</strong> #FFFFFF</li>
+        <li><strong>CMYK:</strong> 0, 0, 0, 0</li>
+      </ul>
+
+      <!-- Danger -->
+      <div style="background: hsl(8, 100%, 68%);"></div>
+      <ul>
+        <li><strong>HSL:</strong> 8&deg;, 100%, 68%</li>
+        <li><strong>RGB:</strong> 255, 114, 92</li>
+        <li><strong>Hex:</strong> #FF725C</li>
+        <li><strong>CMYK:</strong> 0, 55, 64, 0</li>
+      </ul>
+
+    </div>
+  </section>
+
+  <section>
+    <h2>Colour ratios</h2>
+    <p>When representing the NCMG brand, do your best to follow the below ratios. Note that Zesty is not meant to be used on mass, only as an accent colour.</p>
+  </section>
+
+  <div class="colour-ratios">
+
+    <!-- Labels -->
+    <p>~19%</p>
+    <p>~79%</p>
+    <p>~2%</p>
+
+    <!-- Rulers -->
+      <div class="ruler"></div>
+      <div class="ruler"></div>
+      <div class="ruler"></div>
+
+    <!-- Colours -->
+    <div class="colour" style="background: hsl(180, 7%, 16%); color: hsl(180, 15%, 98%); border-radius: 3px 0 0 3px;"></div>
+    <div class="colour" style="background: hsl(0, 0%, 100%); color: hsl(145, 10%, 36%); border-top: 2px solid hsl(145, 7%, 86%); border-bottom: 2px solid hsl(145, 7%, 86%);"></div>
+    <div class="colour" style="background: hsl(145, 63%, 47%); color: hsl(145, 15%, 99%); border-radius: 0 3px 3px 0;"></div>
+ 
+  </div>
+
+  <section>
+    <svg viewBox="0 -2 270 24" class="wave">
+      <path d="M0,0.7c13.5,0,13.5,18,27,18c13.5,0,13.5-18,27-18c13.5,0,13.5,18,27,18c13.5,0,13.5-18,27-18 c13.5,0,13.5,18,27,18c13.5,0,13.5-18,27-18c13.5,0,13.5,18,27,18c13.5,0,13.5-18,27-18c13.5,0,13.5,18,27,18c13.5,0,13.5-18,27-18" />
+    </svg>
+
     <h2>Why bother?</h2>
     <p>Colour is the most important tool in a designer's belt. It establishes a brand's identity, and the emotions we feel when we engage with it. So it's vital that we pick a palette that feels right.</p>
 
@@ -55,36 +172,6 @@
 
     <p>The result is a colour palette that (in my opinion) feels <em>washed out</em> or <em>bland</em>. As a result, we as viewers feel the same emotions towards NCMG. Obviously, that needs to change, but we'll use the existing colour palette as a jumping off point.</p>
   </section>
-
-  <section id="skip-discussion">
-    <h2>A fresh coat of paint</h2>
-    <p>After reworking the above palette, here's what I came up with. Each colour has a corresponding Sass variable (hence the dollar sign). There is also an <em>inverted</em> variant of each colour grouping, accessible with the <code>-inverted</code> suffix. The inverted colour can be used for text or elements on top of it's corresponding colour.</p>
-  </section>
-
-  <div class="palettes">
-
-    <!-- Zesty -->
-    <div class="palette" style="color: hsl(145, 15%, 99%);">
-      <div style="background: #28b262;"><pre>$zesty-dark</pre></div>
-      <div style="background: hsl(145, 63%, 47%);"><pre>$zesty</pre></div>
-      <div style="background: #52cd85;"><pre>$zesty-light</pre></div>
-      <div style="background: #78d8a0;"><pre>$zesty-lighter</pre></div>
-    </div>
-
-    <!-- Licorice -->
-    <div class="palette" style="color: hsl(145, 15%, 99%);">
-      <div style="background: #242929;"><pre>$licorice-dark</pre></div>
-      <div style="background: #272d2d;"><pre>$licorice</pre></div>
-      <div style="background: #3a4040;"><pre>$licorice-light</pre></div>
-      <div style="background: #4e5353;"><pre>$licorice-lighter</pre></div>
-    </div>
-
-    <!-- Creme -->
-    <div class="palette" style="color: #5c7064;border: 1px solid #8fa397;">
-      <div style="background: white;"><pre>$creme</pre></div>
-    </div>
-
-  </div>
   
 
 </article>
