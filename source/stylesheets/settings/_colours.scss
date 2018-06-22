@@ -1,7 +1,32 @@
-$primary: hsl(145, 63%, 47%);
-$primary-inverted: hsl(145, 15%, 99%);
+// Zesty
+$zesty-dark: hsl(145, 63%, 43%);
+$zesty: hsl(145, 63%, 47%);
+$zesty-light: hsl(145, 55%, 56%);
+$zesty-lighter: hsl(145, 55%, 66%);
+$zesty-inverted: hsl(145, 15%, 99%);
 
-$text: hsl(hue($primary), 10%, 40%);
-$text-bold: hsl(hue($primary), 10%, 26%);
+// Licorice
+$licorice-dark: hsl(180, 6%, 15%);
+$licorice: hsl(180, 7%, 16%);
+$licorice-light: hsl(180, 5%, 24%);
+$licorice-lighter: hsl(180, 3%, 32%);
+$licorice-inverted: hsl(180, 15%, 98%);
 
-$border: hsl(hue($primary), 20%, 84%);
+// Grey
+$grey: hsl(145, 7%, 86%);
+$grey-light: hsl(145, 20%, 94%);
+$grey-inverted: hsl(145, 15%, 30%);
+
+// Creme
+$creme: hsl(0, 0%, 100%);
+$creme-inverted: hsl(145, 10%, 36%);
+
+// Danger
+$danger-dark: hsl(8, 76%, 62%);
+$danger: hsl(8, 100%, 68%);
+$danger-light: hsl(8, 100%, 74%);
+$danger-lighter: hsl(8, 100%, 76%);
+$danger-inverted: hsl(8, 15%, 98%);
+
+$text: $creme-inverted;
+$text-bold: darken($creme-inverted, 20%);

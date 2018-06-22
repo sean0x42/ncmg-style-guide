@@ -1,6 +1,6 @@
 code {
-  font-family: 'Roboto Mono', monospace;
-  background: lighten($border, 10%);
+  font-family: $monospace;
+  background: $grey-light;
   padding: 1px 0;
   border-radius: $border-radius;
   font-size: 85%;

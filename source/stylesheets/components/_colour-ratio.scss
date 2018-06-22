@@ -1,0 +1,26 @@
+.colour-ratios {
+  display: grid;
+  grid-template-columns: 19fr 79fr 2fr;
+  width: 100%;
+
+  .colour {
+    display: inline;
+    height: 40px;
+    min-width: 50px;
+  }
+
+  .ruler {
+    border: 2px solid $grey;
+    border-radius: $border-radius $border-radius 0 0;
+    border-bottom: 0;
+    margin: 0 0.75rem 0.75rem;
+    height: 15px;
+  }
+
+  p {
+    text-align: center;
+    margin: 0;
+    color: hsl(180, 15%, 60%);
+  }
+
+}
