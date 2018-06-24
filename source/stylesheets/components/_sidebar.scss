@@ -1,0 +1,12 @@
+.sidebar {
+  
+  h2 {
+    font-size: 0.75em;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    text-align: left;
+    margin: 0 1rem 0.5rem;
+    color: lighten($text, 22%);
+    // font-weight: normal;
+  }
+}

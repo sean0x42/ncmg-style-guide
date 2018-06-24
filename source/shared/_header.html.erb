@@ -1,16 +1,8 @@
 <div class="header">
-  <div class="wrapper">
-    <% link_to '' do %>
+  <div class="header-wrapper">
+    <% link_to '/', class: 'logo-wrapper' do %>
       <%= image_tag 'logo.svg', { class: 'logo', alt: 'North Coast Marble & Granite' } %>
+      <h1>Style Guide</h1>
     <% end %>
-
-    <ul class="navigation">
-      <li><%= link_to 'Branding', 'branding' %></li>
-      <li><%= link_to 'Colour', 'colour' %></li>
-      <li><%= link_to 'Icons', 'icons' %></li>
-      <li><%= link_to 'Type', 'type' %></li>
-      <li><%= link_to 'Components', 'components' %></li>
-    </ul>
-
   </div>
 </div>

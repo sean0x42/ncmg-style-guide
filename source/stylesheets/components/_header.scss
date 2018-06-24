@@ -1,15 +1,39 @@
 .header {
-  margin-bottom: 6rem;
+  padding: 0;
+  max-width: 1200px;
+  margin: 0 auto 3rem;
 
-  .wrapper {
+  .header-wrapper {
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    background: $licorice;
+    padding: 1.75rem;
+  }
+
+  .logo-wrapper {
+    display: flex;
+    align-items: center;
+
+    h1 {
+      display: inline;
+      margin: 0;
+      font-size: 1em;
+      font-weight: normal;
+      line-height: 1.0;
+      color: $licorice-inverted;
+    }
+
+    &:hover {
+      text-decoration: none;
+    }
   }
 
   .logo {
     display: block;
-    height: 25px;
+    height: 22px;
+    border-right: 2px solid $grey;
+    padding-right: 1rem;
+    margin-right: 0.75rem;
   }
 
 }
