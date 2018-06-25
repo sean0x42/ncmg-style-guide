@@ -5,12 +5,12 @@ title: Colour
 <article>
   <header>
     <h2>Colours</h2>
-    <p>A deep dive into the colour palette of North Coast Marble &amp; Granite, its history, and its future on the web.</p>
+    <p>Colour is the most important tool in a designer's belt. It establishes a brand's identity, and the emotions we feel when we engage with it. So it's vital that we pick a palette that not only looks right, it feels right as well.</p>
   </header>
 
   <section>
     <h3>A fresh coat of paint</h3>
-    <p>Before I dive into a lengthy discussion, let's take a look at the final product. Each colour has a corresponding Sass variable (hence the dollar sign). There is also an <em>inverted</em> variant of each colour grouping, accessible with the <code>-inverted</code> suffix. The inverted colour can be used for text or elements on top of it's corresponding colour.</p>
+    <p>Each colour has a corresponding Sass variable (hence the dollar sign). There is also an <em>inverted</em> variant of each colour grouping, accessible with the <code>-inverted</code> suffix. The inverted colour can be used for text or elements on top of it's corresponding colour.</p>
   </section>
 
   <div class="palettes">
@@ -33,9 +33,10 @@ title: Colour
 
     <!-- Grey -->
     <div class="palette" style="color: hsl(145, 15%, 30%);">
-      <div style="background: hsl(145, 7%, 86%);"><pre>$grey</pre></div>
-      <div style="background: hsl(145, 20%, 94%);"><pre>$grey-light</pre></div>
-      <div style="background: hsl(0, 0%, 100%); border: 2px solid hsl(145, 7%, 86%);border-top: none;color: hsl(145, 10%, 36%);"><pre>$creme</pre></div>
+      <div style="background: #D9DADE;"><pre>$grey</pre></div>
+      <div style="background: hsl(220, 20%, 94%);"><pre>$grey-light</pre></div>
+      <div style="background: hsl(220, 20%, 97%);"><pre>$grey-lighter</pre></div>
+      <div style="background: hsl(0, 0%, 100%); border: 2px solid hsl(220, 20%, 94%);border-top: none;color: hsl(145, 10%, 36%);"><pre>$creme</pre></div>
     </div>
 
     <!-- Danger -->
@@ -72,16 +73,16 @@ title: Colour
       </ul>
 
       <!-- Grey -->
-      <div style="background: hsl(145, 7%, 86%);"></div>
+      <div style="background: hsl(228, 7%, 86.1%);"></div>
       <ul>
-        <li><strong>HSL:</strong> 145&deg;, 7%, 86%</li>
-        <li><strong>RGB:</strong> 217, 222, 219</li>
-        <li><strong>Hex:</strong> #D9DEDB</li>
-        <li><strong>CMYK:</strong> 2, 0, 1, 13</li>
+        <li><strong>HSL:</strong> 228&deg;, 7%, 86%</li>
+        <li><strong>RGB:</strong> 217, 218, 222</li>
+        <li><strong>Hex:</strong> #D9DADE</li>
+        <li><strong>CMYK:</strong> 2, 2, 0, 13</li>
       </ul>
 
       <!-- Creme -->
-      <div style="background: hsl(0, 0%, 100%); border: 2px solid hsl(145, 7%, 86%);"></div>
+      <div style="background: hsl(0, 0%, 100%); border: 2px solid hsl(228, 7%, 86.1%);"></div>
       <ul>
         <li><strong>HSL:</strong> 0&deg;, 0%, 100%</li>
         <li><strong>RGB:</strong> 255, 255, 255</li>
@@ -113,14 +114,9 @@ title: Colour
     <p>~79%</p>
     <p>~2%</p>
 
-    <!-- Rulers -->
-    <%- 3.times do %>
-      <div class="ruler"></div>
-    <%- end %>
-
     <!-- Colours -->
     <div class="colour" style="background: hsl(180, 7%, 16%); color: hsl(180, 15%, 98%); border-radius: 3px 0 0 3px;"></div>
-    <div class="colour" style="background: hsl(0, 0%, 100%); color: hsl(145, 10%, 36%); border-top: 2px solid hsl(145, 7%, 86%); border-bottom: 2px solid hsl(145, 7%, 86%);"></div>
+    <div class="colour" style="background: hsl(0, 0%, 100%); color: hsl(145, 10%, 36%); border-top: 2px solid hsl(220, 20%, 94%); border-bottom: 2px solid hsl(220, 20%, 94%);"></div>
     <div class="colour" style="background: hsl(145, 63%, 47%); color: hsl(145, 15%, 99%); border-radius: 0 3px 3px 0;"></div>
  
   </div>

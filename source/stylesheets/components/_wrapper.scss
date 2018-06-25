@@ -1,9 +1,13 @@
 .wrapper {
   display: grid;
-  grid-template-columns: 260px 1fr;
+  grid-template-columns: 220px 1fr;
   grid-gap: 2rem;
   width: 100%;
   max-width: 1200px;
   margin: 2rem auto;
   padding: 1rem;
+
+  & > div {
+    flex-shrink: 0;
+  }
 }

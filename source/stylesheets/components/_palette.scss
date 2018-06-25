@@ -11,9 +11,9 @@
 .palettes {
   width: 100%;
   display: grid;
-  grid-gap: 1.5rem;
+  grid-gap: 1.2rem;
   margin: 3rem 0;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(190px, 1fr));
   align-items: flex-start;
 
   .palette {
@@ -28,7 +28,7 @@
     pre {
       font-family: 'Roboto Mono', monospace;
       margin: 0;
-      font-size: 85%;
+      font-size: 80%;
     }
   }
 }
