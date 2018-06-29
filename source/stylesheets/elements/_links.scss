@@ -2,8 +2,11 @@ a {
   color: $zesty-dark;
   text-decoration: none;
   cursor: pointer;
+  text-decoration: underline $zesty-dark;
+  transition: color 200ms, text-decoration-color 200ms;
 
   &:hover {
-    text-decoration: underline;
+    color: $text-bold;
+    text-decoration-color: $text-bold;
   }
 }

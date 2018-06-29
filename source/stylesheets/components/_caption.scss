@@ -1,0 +1,13 @@
+.caption {
+  padding: 1rem;
+  margin-bottom: 3rem;
+  color: lighten($text, 20%);
+
+  p {
+    margin-top: 0;
+  }
+}
+
+.captioned {
+  margin-bottom: 0;
+}

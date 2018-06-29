@@ -1,0 +1,23 @@
+pre {
+  margin: 2rem 0;
+  overflow: auto;
+  line-height: 1.7;
+  border-radius: 3px;
+  word-wrap: normal;
+  font-family: $monospace;
+  font-size: 85%;
+
+  code {
+    color: $grey-inverted;
+    background-color: $grey-lighter;
+    border-radius: $border-radius;
+    padding: 1rem;
+    display: block;
+    overflow-x: auto;
+
+    em {
+      color: $zesty;
+      font-style: normal;
+    }
+  }
+}

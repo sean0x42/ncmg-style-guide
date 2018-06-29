@@ -1,18 +1,20 @@
 .header {
   padding: 0;
-  max-width: 1200px;
+  max-width: 1000px;
   margin: 0 auto 3rem;
 
   .header-wrapper {
     display: flex;
     align-items: center;
     background: $licorice;
+    border-top: 4px solid $zesty-dark;
     padding: 1.75rem;
   }
 
   .logo-wrapper {
     display: flex;
     align-items: center;
+    text-decoration: none;
 
     h1 {
       display: inline;
@@ -21,10 +23,6 @@
       font-weight: normal;
       line-height: 1.0;
       color: $licorice-inverted;
-    }
-
-    &:hover {
-      text-decoration: none;
     }
   }
 

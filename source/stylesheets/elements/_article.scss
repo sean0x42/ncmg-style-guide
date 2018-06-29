@@ -1,21 +1,38 @@
 article {
-  border: 2px solid $grey-light;
-  border-radius: $border-radius;
-  padding: 2.5rem;
+  margin-top: 2rem;
 
-  img {
-    width: 100%;
+  & > img {
+    display: block;
+    max-width: 100%;
     border-radius: $border-radius;
-    border: 2px solid $grey-light;
-    margin: 2rem 0;
+    border: 1px solid $grey;
+    margin: 4rem auto;
   }
 
   header,
   section {
-    max-width: 60ch;
+    max-width: 70ch;
+    margin: 0 auto;
   }
 
   ol p {
     margin: 0.5rem 0;
+  }
+
+  ol img {
+    display: block;
+    max-width: 100%;
+    border-radius: $border-radius;
+    border: 1px solid $grey;
+    margin: 1rem 0 2rem;
+  }
+
+  .subtitle {
+    margin-bottom: 0.25rem;
+    color: $zesty-dark;
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: 1px;
+    font-size: 0.8rem;
   }
 }
