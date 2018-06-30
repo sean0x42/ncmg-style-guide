@@ -10,28 +10,21 @@
 </head>
 <body>
   <div class="header">
-  <div class="wrapper">
-<a href="">      <img src="../images/logo.svg" class="logo" alt="North Coast Marble &amp; Granite" />
-</a>
-    <ul class="navigation">
-      <li><a href="branding">Branding</a></li>
-      <li><a href="colour">Colour</a></li>
-      <li><a href="icons">Icons</a></li>
-      <li><a href="type">Type</a></li>
-      <li><a href="components">Components</a></li>
-    </ul>
-
-  </div>
+  <div class="header-wrapper">
+<a href="/" class="logo-wrapper">      <img src="../images/logo.svg" class="logo" alt="North Coast Marble &amp; Granite" />
+      <h1>Style Guide</h1>
+</a>  </div>
 </div>
-  <article>
+  <div class="wrapper">
+    <article>
   <header>
-    <h1>Colours</h1>
-    <p>A deep dive into the colour palette of North Coast Marble &amp; Granite, its history, and its future on the web.</p>
+    <h2>Colour</h2>
+    <p>Colour is the most important tool in a designer's belt. It establishes a brand's identity, and the emotions we feel when we engage with it. So it's vital that we pick a palette that not only looks right, it feels right as well.</p>
   </header>
 
   <section>
-    <h2>A fresh coat of paint</h2>
-    <p>Before I dive into a lengthy discussion, let's take a look at the final product. Each colour has a corresponding Sass variable (hence the dollar sign). There is also an <em>inverted</em> variant of each colour grouping, accessible with the <code>-inverted</code> suffix. The inverted colour can be used for text or elements on top of it's corresponding colour.</p>
+    <h3>A fresh coat of paint</h3>
+    <p>Each colour has a corresponding Sass variable (hence the dollar sign). There is also an <em>inverted</em> variant of each colour grouping, accessible with the <code>-inverted</code> suffix. The inverted colour can be used for text or elements on top of it's corresponding colour.</p>
   </section>
 
   <div class="palettes">
@@ -54,9 +47,10 @@
 
     <!-- Grey -->
     <div class="palette" style="color: hsl(145, 15%, 30%);">
-      <div style="background: hsl(145, 7%, 86%);"><pre>$grey</pre></div>
-      <div style="background: hsl(145, 20%, 94%);"><pre>$grey-light</pre></div>
-      <div style="background: hsl(0, 0%, 100%); border: 2px solid hsl(145, 7%, 86%);border-top: none;color: hsl(145, 10%, 36%);"><pre>$creme</pre></div>
+      <div style="background: #D9DADE;"><pre>$grey</pre></div>
+      <div style="background: hsl(220, 20%, 94%);"><pre>$grey-light</pre></div>
+      <div style="background: hsl(220, 20%, 97%);"><pre>$grey-lighter</pre></div>
+      <div style="background: hsl(0, 0%, 100%); border: 2px solid hsl(220, 20%, 94%);border-top: none;color: hsl(145, 10%, 36%);"><pre>$creme</pre></div>
     </div>
 
     <!-- Danger -->
@@ -69,7 +63,7 @@
   </div>
 
   <section>
-    <h2>Non-Sass environments</h2>
+    <h3>Non-Sass environments</h3>
     <p>If you need the branding colours outside of a Sass related environment (Photoshop, Illustrator etc.) then the following colour codes may come in handy.</p>
 
     <div class="colour-map">
@@ -93,16 +87,16 @@
       </ul>
 
       <!-- Grey -->
-      <div style="background: hsl(145, 7%, 86%);"></div>
+      <div style="background: hsl(228, 7%, 86.1%);"></div>
       <ul>
-        <li><strong>HSL:</strong> 145&deg;, 7%, 86%</li>
-        <li><strong>RGB:</strong> 217, 222, 219</li>
-        <li><strong>Hex:</strong> #D9DEDB</li>
-        <li><strong>CMYK:</strong> 2, 0, 1, 13</li>
+        <li><strong>HSL:</strong> 228&deg;, 7%, 86%</li>
+        <li><strong>RGB:</strong> 217, 218, 222</li>
+        <li><strong>Hex:</strong> #D9DADE</li>
+        <li><strong>CMYK:</strong> 2, 2, 0, 13</li>
       </ul>
 
       <!-- Creme -->
-      <div style="background: hsl(0, 0%, 100%); border: 2px solid hsl(145, 7%, 86%);"></div>
+      <div style="background: hsl(0, 0%, 100%); border: 2px solid hsl(228, 7%, 86.1%);"></div>
       <ul>
         <li><strong>HSL:</strong> 0&deg;, 0%, 100%</li>
         <li><strong>RGB:</strong> 255, 255, 255</li>
@@ -123,7 +117,7 @@
   </section>
 
   <section>
-    <h2>Colour ratios</h2>
+    <h3>Colour ratios</h3>
     <p>When representing the NCMG brand, do your best to follow the below ratios. Note that Zesty is not meant to be used on mass, only as an accent colour.</p>
   </section>
 
@@ -134,52 +128,19 @@
     <p>~79%</p>
     <p>~2%</p>
 
-    <!-- Rulers -->
-      <div class="ruler"></div>
-      <div class="ruler"></div>
-      <div class="ruler"></div>
-
     <!-- Colours -->
     <div class="colour" style="background: hsl(180, 7%, 16%); color: hsl(180, 15%, 98%); border-radius: 3px 0 0 3px;"></div>
-    <div class="colour" style="background: hsl(0, 0%, 100%); color: hsl(145, 10%, 36%); border-top: 2px solid hsl(145, 7%, 86%); border-bottom: 2px solid hsl(145, 7%, 86%);"></div>
+    <div class="colour" style="background: hsl(0, 0%, 100%); color: hsl(145, 10%, 36%); border-top: 2px solid hsl(220, 20%, 94%); border-bottom: 2px solid hsl(220, 20%, 94%);"></div>
     <div class="colour" style="background: hsl(145, 63%, 47%); color: hsl(145, 15%, 99%); border-radius: 0 3px 3px 0;"></div>
  
   </div>
-
-  <section>
-    <svg viewBox="0 -2 270 24" class="wave">
-      <path d="M0,0.7c13.5,0,13.5,18,27,18c13.5,0,13.5-18,27-18c13.5,0,13.5,18,27,18c13.5,0,13.5-18,27-18 c13.5,0,13.5,18,27,18c13.5,0,13.5-18,27-18c13.5,0,13.5,18,27,18c13.5,0,13.5-18,27-18c13.5,0,13.5,18,27,18c13.5,0,13.5-18,27-18" />
-    </svg>
-
-    <h2>Why bother?</h2>
-    <p>Colour is the most important tool in a designer's belt. It establishes a brand's identity, and the emotions we feel when we engage with it. So it's vital that we pick a palette that feels right.</p>
-
-    <p>We're aiming for a modern, professional look. Something reliable, trustworthy, but not without a hint of rigour. So it's time to look back on the history of NCMG's colour palette, to decide what stays, and what goes.</p>
-  </section>
-
-  <section>
-    <h2>Embracing history</h2>
-    <p>Just in case you've forgotten, here's what the original site looked like. Errors messages and all.</p>
-    
-    <img src="../images/original.png" alt="Original" />
-
-    <div class="thin-palette">
-      <div style="background: #9fbc5e;"></div>
-      <div style="background: #3a3634;"></div>
-      <div style="background: #898784;"></div>
-      <div style="background: #e9e8e4;"></div>
-    </div>
-
-    <p>The result is a colour palette that (in my opinion) feels <em>washed out</em> or <em>bland</em>. As a result, we as viewers feel the same emotions towards NCMG. Obviously, that needs to change, but we'll use the existing colour palette as a jumping off point.</p>
-  </section>
   
 
 </article>
-  <div class="footer">
-  <div class="wrapper">
+    <div class="footer">
     <p class="copyright">North Coast Marble &amp; Granite &copy; 2018</p>
     <p class="copyright">Created by <a href="https://www.seanbailey.io">Sean Bailey</a>.</p>
-  </div>
 </div>
+  </div>
 </body>
 </html>

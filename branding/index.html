@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en-AU">
 <head>
-  <title>Branding &middot; North Coast Marble &amp; Granite</title>
+  <title>Branding and Logos &middot; North Coast Marble &amp; Granite</title>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=1, maximum-scale: 1.0"/>
   <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
@@ -10,25 +10,78 @@
 </head>
 <body>
   <div class="header">
-  <div class="wrapper">
-<a href="">      <img src="../images/logo.svg" class="logo" alt="North Coast Marble &amp; Granite" />
-</a>
-    <ul class="navigation">
-      <li><a href="branding">Branding</a></li>
-      <li><a href="colour">Colour</a></li>
-      <li><a href="icons">Icons</a></li>
-      <li><a href="type">Type</a></li>
-      <li><a href="components">Components</a></li>
-    </ul>
-
-  </div>
+  <div class="header-wrapper">
+<a href="/" class="logo-wrapper">      <img src="../images/logo.svg" class="logo" alt="North Coast Marble &amp; Granite" />
+      <h1>Style Guide</h1>
+</a>  </div>
 </div>
-  
-  <div class="footer">
   <div class="wrapper">
+    <article>
+  <header>
+    <p class="subtitle">Style Guide</p>
+    <h2>Branding and Logos</h2>
+    <p>Interface design is all about emotion, and what we feel when we look at the elements on our screen. When we place branding on a page, it's important to consider things like colour, positioning, scale and more, because these things alter how viewers feel about a brand.</p>
+  </header>
+
+  <section>
+    <h3>Branding Guidelines</h3>
+    <p>These guidelines outline how you should write <em>NCMG</em> and <em>North Coast Marble &amp; Granite</em> in copy.</p>
+    <ol>
+      <li>
+        <p>When writing NCMG, <strong>use upper case.</strong> NCMG is an initialism, not a word. Therefore it should never be written as <em>ncmg</em> or <em>Ncmg</em>.</p>
+      </li>
+      <li>
+        <p>When writing North Coast Marble &amp; Granite, <strong>use title case and an ampersand (&).</strong> It should never be written in sentence case, and you should never use the word <em>and</em>.</p>
+      </li>
+    </ol>
+  </section>
+
+  <section>
+    <h3>The logo</h3>
+    <p>Let's take a quick look at what we're dealing with here. I reconstructed the following branding from an NCMG business card, so it's accuracy is not guaranteed. The NCMG logo is suitable for most situations. There exists a more verbose version (including a subtitle), but I was unable to find the correct font to recreate this.</p>
+
+    <div class="branding captioned">
+      <div>
+          <img src="../images/n.svg" class="n" alt="N" />
+          <img src="../images/n.svg" class="n" alt="N" />
+          <img src="../images/n.svg" class="n" alt="N" />
+          <img src="../images/n.svg" class="n" alt="N" />
+        <img src="../images/logo.svg" id="brand" alt="Logo" />
+      </div>
+    </div>
+    <div class="caption">
+      <p>Standard Initialism Logo (Hover to see minimum spacing)</p>
+    </div>
+
+  </section>
+
+  <section>
+    <h3>Logo Guidelines</h3>
+    <p>When using the above logo, be sure to following these simple rules.</p>
+    <ol>
+      <li>
+        <p><strong>Never use gradients.</strong> The NCMG logo should be flat. You may use very subtle gradients where only the hue is rotated if you wish (at most 10&deg;-15&deg;).</p>
+        <img src="../images/logo-with-gradient.png" alt="Logo with gradient" />
+      </li>
+      <li>
+        <p><strong>Never use shadows.</strong> The NCMG logo should be flat.</p>
+        <img src="../images/logo-with-shadow.png" alt="Logo with shadow" />
+      </li>
+      <li>
+        <p><strong>Don't place the logo on images.</strong> If this is unavoidable, you should saturate the background to ensure readability.</p>
+        <img src="../images/logo-with-background.png" alt="Logo with background" />
+      </li>
+      <li>
+        <p><strong>Use the right colour logo for the right background.</strong> <code>$zesty</code> logos can be used on both dark and light backgrounds, where as the <code>$creme</code> logo should be used on a <code>$zesty</code> background. Refer to the <a href="colour">colour guide</a> if you're unfamiliar with the above variables.</p>
+      </li>
+    </ol>
+  </section>
+
+</article>
+    <div class="footer">
     <p class="copyright">North Coast Marble &amp; Granite &copy; 2018</p>
     <p class="copyright">Created by <a href="https://www.seanbailey.io">Sean Bailey</a>.</p>
-  </div>
 </div>
+  </div>
 </body>
 </html>
