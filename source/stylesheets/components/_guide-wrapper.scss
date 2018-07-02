@@ -1,16 +1,61 @@
 .guide-wrapper {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 400px));
-  grid-gap: 1rem;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 3rem;
+  align-items: flex-end;
+  margin: 1rem 0;
+
+  .guide-list {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+
+    .guide {
+      border-bottom: 1px solid $grey-light;
+      padding: 1rem 1rem 1rem 0;
+    }
+
+    li:last-child .guide {
+      border-bottom: none;
+    }
+  }
+
+  .featured {
+    padding-bottom: 1.2rem;
+  }
 
   .guide {
-    border: 1px solid $grey;
-    border-radius: $border-radius;
+    display: block;
     text-decoration: none;
+    line-height: 1.9;
+
+    h2 {
+      font-size: $font-size + 3px;
+      margin: 0.25rem 0;
+      transition: color 150ms;
+    }
+
+    p {
+      color: $text;
+      margin: 0.2rem 0;
+      transition: color 150ms;
+    }
 
     img {
       width: 100%;
+      border: 1px solid $grey-light;
+      border-radius: $border-radius;
+      margin-bottom: 0.75rem;
     }
+
+    &:hover h2 {
+      color: $zesty-dark;
+    }
+
+    &:hover p {
+      color: $text-bold;
+    }
+
   }
 
 }

@@ -71,25 +71,34 @@
 
   // For variants of this button that indicate an action with potentially dangerous consequences.
   &.danger {
-    color: $danger-inverted;
-    background: $danger;
+    color: $danger-dark-inverted;
+    background: $danger-dark;
+  }
+
+  svg.material-icons {
+    fill: $zesty-inverted;
   }
 }
 
 .button-secondary {
   position: relative;
-  color: $zesty-dark;
+  color: $text;
   background: none;
-  border: 1px solid $grey;
+  border: 1px solid $grey-light;
   padding: 13px 21px;
+  transition: color 200ms;
 
   .material-icons {
-    color: $zesty-light;
-    fill: $zesty-light;
+    color: $zesty;
+    fill: $zesty;
+  }
+
+  &:hover {
+    color: $zesty-dark;
   }
 
   &.danger {
-    color: $danger;
+    color: $danger-dark;
   }
 }
 
@@ -99,6 +108,6 @@
   padding-right: 14px;
 
   &.danger {
-    color: $danger;
+    color: $danger-dark;
   }
 }

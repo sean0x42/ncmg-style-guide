@@ -1,14 +1,13 @@
 .header {
   padding: 0;
-  max-width: 1000px;
-  margin: 0 auto 3rem;
 
   .header-wrapper {
     display: flex;
     align-items: center;
-    background: $licorice;
-    border-top: 4px solid $zesty-dark;
-    padding: 1.75rem;
+    justify-content: space-between;
+    max-width: 1100px;
+    margin: 2rem auto 1rem;
+    padding: 1rem;
   }
 
   .logo-wrapper {
@@ -22,7 +21,7 @@
       font-size: 1em;
       font-weight: normal;
       line-height: 1.0;
-      color: $licorice-inverted;
+      color: $text;
     }
   }
 

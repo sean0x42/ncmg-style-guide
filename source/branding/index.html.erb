@@ -2,64 +2,90 @@
 title: Branding and Logos
 ---
 
-<article>
-  <header>
-    <p class="subtitle">Style Guide</p>
-    <h2>Branding and Logos</h2>
-    <p>Interface design is all about emotion, and what we feel when we look at the elements on our screen. When we place branding on a page, it's important to consider things like colour, positioning, scale and more, because these things alter how viewers feel about a brand.</p>
-  </header>
-
-  <section>
-    <h3>Branding Guidelines</h3>
-    <p>These guidelines outline how you should write <em>NCMG</em> and <em>North Coast Marble &amp; Granite</em> in copy.</p>
+<div class="article-wrapper">
+  <div class="contents">
+    <h2>Contents</h2>
     <ol>
-      <li>
-        <p>When writing NCMG, <strong>use upper case.</strong> NCMG is an initialism, not a word. Therefore it should never be written as <em>ncmg</em> or <em>Ncmg</em>.</p>
-      </li>
-      <li>
-        <p>When writing North Coast Marble &amp; Granite, <strong>use title case and an ampersand (&).</strong> It should never be written in sentence case, and you should never use the word <em>and</em>.</p>
-      </li>
+      <li><%= link_to "Branding and Logos", "#branding-and-logos" %></li>
+      <li><%= link_to "Branding Guidelines", "#branding-guidelines" %></li>
+      <li><%= link_to "The Logo", "#the-logo" %></li>
+      <li><%= link_to "Logo Guidelines", "#logo-guidelines" %></li>
     </ol>
-  </section>
+    <% link_to "/", class: 'button-secondary wide' do %>
+      <svg class="material-icons" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="24px"
+   height="24px" viewBox="0 0 24 24" enable-background="new 0 0 24 24" xml:space="preserve">
+<g id="Bounding_Boxes">
+  <path fill="none" d="M0,0h24v24H0V0z"/>
+</g>
+<g id="Rounded">
+  <path d="M19,11H7.83l4.88-4.88c0.39-0.39,0.39-1.03,0-1.42l0,0c-0.39-0.39-1.02-0.39-1.41,0l-6.59,6.59
+    c-0.39,0.39-0.39,1.02,0,1.41l6.59,6.59c0.39,0.39,1.02,0.39,1.41,0l0,0c0.39-0.39,0.39-1.02,0-1.41L7.83,13H19c0.55,0,1-0.45,1-1
+    v0C20,11.45,19.55,11,19,11z"/>
+</g>
+</svg>
+      <span>All guides</span>
+    <% end %>
+  </div>
 
-  <section>
-    <h3>The logo</h3>
-    <p>Let's take a quick look at what we're dealing with here. I reconstructed the following branding from an NCMG business card, so it's accuracy is not guaranteed. The NCMG logo is suitable for most situations. There exists a more verbose version (including a subtitle), but I was unable to find the correct font to recreate this.</p>
+  <article>
+    <header>
+      <p class="subtitle">Style Guide</p>
+      <h2 id="branding-and-logos">Branding and Logos</h2>
+      <p>Interface design is all about emotion, and what we feel when we look at the elements on our screen. When we place branding on a page, it's important to consider things like colour, positioning, scale and more, because these things alter how viewers feel about a brand.</p>
+    </header>
 
-    <div class="branding captioned">
-      <div>
-        <% 4.times do %>
-          <%= image_tag "n.svg", class: 'n' %>
-        <% end %>
-        <%= image_tag "logo.svg", id: 'brand' %>
+    <section>
+      <h3 id="branding-guidelines">Branding Guidelines</h3>
+      <p>These guidelines outline how you should write <em>NCMG</em> and <em>North Coast Marble &amp; Granite</em> in copy.</p>
+      <ol>
+        <li>
+          <p>When writing NCMG, <strong>use upper case.</strong> NCMG is an initialism, not a word. Therefore it should never be written as <em>ncmg</em> or <em>Ncmg</em>.</p>
+        </li>
+        <li>
+          <p>When writing North Coast Marble &amp; Granite, <strong>use title case and an ampersand (&).</strong> It should never be written in sentence case, and you should never use the word <em>and</em>.</p>
+        </li>
+      </ol>
+    </section>
+
+    <section>
+      <h3 id="the-logo">The logo</h3>
+      <p>Let's take a quick look at what we're dealing with here. I reconstructed the following branding from an NCMG business card, so it's accuracy is not guaranteed. The NCMG logo is suitable for most situations. There exists a more verbose version (including a subtitle), but I was unable to find the correct font to recreate this.</p>
+
+      <div class="branding captioned">
+        <div>
+          <% 4.times do %>
+            <%= image_tag "n.svg", class: 'n' %>
+          <% end %>
+          <%= image_tag "logo.svg", id: 'brand' %>
+        </div>
       </div>
-    </div>
-    <div class="caption">
-      <p>Standard Initialism Logo (Hover to see minimum spacing)</p>
-    </div>
+      <div class="caption">
+        <p>Standard Initialism Logo (Hover to see minimum spacing)</p>
+      </div>
 
-  </section>
+    </section>
 
-  <section>
-    <h3>Logo Guidelines</h3>
-    <p>When using the above logo, be sure to following these simple rules.</p>
-    <ol>
-      <li>
-        <p><strong>Never use gradients.</strong> The NCMG logo should be flat. You may use very subtle gradients where only the hue is rotated if you wish (at most 10&deg;-15&deg;).</p>
-        <%= image_tag "logo-with-gradient.png" %>
-      </li>
-      <li>
-        <p><strong>Never use shadows.</strong> The NCMG logo should be flat.</p>
-        <%= image_tag "logo-with-shadow.png" %>
-      </li>
-      <li>
-        <p><strong>Don't place the logo on images.</strong> If this is unavoidable, you should saturate the background to ensure readability.</p>
-        <%= image_tag "logo-with-background.png" %>
-      </li>
-      <li>
-        <p><strong>Use the right colour logo for the right background.</strong> <code>$zesty</code> logos can be used on both dark and light backgrounds, where as the <code>$creme</code> logo should be used on a <code>$zesty</code> background. Refer to the <%= link_to "colour guide", "colour" %> if you're unfamiliar with the above variables.</p>
-      </li>
-    </ol>
-  </section>
+    <section>
+      <h3 id="logo-guidelines">Logo Guidelines</h3>
+      <p>When using the above logo, be sure to following these simple rules.</p>
+      <ol>
+        <li>
+          <p><strong>Never use gradients.</strong> The NCMG logo should be flat. You may use very subtle gradients where only the hue is rotated if you wish (at most 10&deg;-15&deg;).</p>
+          <%= image_tag "logo-with-gradient.png" %>
+        </li>
+        <li>
+          <p><strong>Never use shadows.</strong> The NCMG logo should be flat.</p>
+          <%= image_tag "logo-with-shadow.png" %>
+        </li>
+        <li>
+          <p><strong>Don't place the logo on images.</strong> If this is unavoidable, you should saturate the background to ensure readability.</p>
+          <%= image_tag "logo-with-background.png" %>
+        </li>
+        <li>
+          <p><strong>Use the right colour logo for the right background.</strong> <code>$zesty</code> logos can be used on both dark and light backgrounds, where as the <code>$creme</code> logo should be used on a <code>$zesty</code> background. Refer to the <%= link_to "colour guide", "colour", class: 'anchor' %> if you're unfamiliar with the above variables.</p>
+        </li>
+      </ol>
+    </section>
 
-</article>
+  </article>
+</div>

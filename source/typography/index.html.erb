@@ -1,0 +1,75 @@
+---
+title: Typography
+---
+<div class="article-wrapper">
+  <div class="contents">
+    <h2>Contents</h2>
+    <ol>
+      <li><%= link_to "Typography", "#typography" %></li>
+      <li><%= link_to "Introducing Inter UI", "#introducing-inter-ui" %></li>
+      <li><%= link_to "For the Technical Side", "#for-the-technical-side" %></li>
+      <li><%= link_to "Guidelines", "#guidelines" %></li>
+    </ol>
+    <% link_to "/", class: 'button-secondary wide' do %>
+      <svg class="material-icons" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="24px"
+   height="24px" viewBox="0 0 24 24" enable-background="new 0 0 24 24" xml:space="preserve">
+<g id="Bounding_Boxes">
+  <path fill="none" d="M0,0h24v24H0V0z"/>
+</g>
+<g id="Rounded">
+  <path d="M19,11H7.83l4.88-4.88c0.39-0.39,0.39-1.03,0-1.42l0,0c-0.39-0.39-1.02-0.39-1.41,0l-6.59,6.59
+    c-0.39,0.39-0.39,1.02,0,1.41l6.59,6.59c0.39,0.39,1.02,0.39,1.41,0l0,0c0.39-0.39,0.39-1.02,0-1.41L7.83,13H19c0.55,0,1-0.45,1-1
+    v0C20,11.45,19.55,11,19,11z"/>
+</g>
+</svg>
+      <span>All guides</span>
+    <% end %>
+  </div>
+
+  <article>
+    <header>
+      <p class="subtitle">Style Guide</p>
+      <h2 id="typography">Typography</h2>
+      <p>Good typography seems simple. On the surface, it comes down to a typeface that reflects the emotion that a website is trying to convey. However, it's actually far more complex than this. It also comes down to attributes like line height, font weight, kerning and more.</p>
+    </header>
+
+    <section>
+      <h3 id="introducing-inter-ui">Introducing Inter UI</h3>
+      <p>The NCMG website has two separate typefaces (or fonts). The primary of which, is <%=link_to "Inter UI", "https://rsms.me/inter/", target: "_blank", class: 'anchor' %>. Inter UI is a free body font, that is designed to look great on small to medium sized displays. It takes inspiration from power houses like Roboto (from Google) and San Francisco (from Apple). It's an excellent all round font, that works well with the NCMG branding.</p> 
+      <p>If you'd like to use it in a Sass environment you can access it (and it's font stack) with <code>$font-stack</code>. This includes the system font as a fall back.</p>
+    </section>
+
+    <%= image_tag "inter-ui-sample.png", class: 'captioned' %>
+    <div class="caption">
+      <p>An Inter UI Sample (courtesy of https://rsms.me/inter/)</p>
+    </div>
+
+    <section>
+      <h3 id="for-the-technical-side">For the technical side</h3>
+      <p>Sometimes, you need to express things in more technical terms. That's where a monospace font comes in to play. The NCMG website also has a standard monospace typeface, called <%= link_to "Roboto Mono", "https://fonts.google.com/specimen/Roboto+Mono", target: "_blank", class: 'anchor' %>. <span class="monospace">You can use Roboto Mono whenever you like, by using the Sass variable <code>$monospace</code>.</span></p>
+    </section>
+
+    <section>
+      <h3 id="guidelines">Guidelines</h3>
+      <p>The following rules should help you keep your typography beautiful.</p>
+      <ol>
+        <li>
+          <p><strong>Keep line heights high</strong>. The text you're currently reading has a line height of 1.9! It's insane I know. But it improves readability massively. The more text breathes the easier it is to read (within reason of course).</p>
+        </li>
+        <li>
+          <p><strong>Keep line length short</strong>. The human eye gets tired if it has to read text with more than 80 characters per line. The text you're currently reading is limited to 70 characters. CSS has a criminally underrated <code>ch</code> unit, which specifies sizes according to a number of characters.</p>
+        </li>
+        <li>
+          <p><strong>Use grey, not black</strong>. Black can be straining on the eyes. Use grey instead. If you're in a Sass environment, use <code>$text</code> for text colour, as it's a grey saturated with <code>$zesty</code>.</p>
+        </li>
+        <li>
+          <p><strong>Use colour and weight to emphasize or de-emphasize text.</strong> It's better than changing the font size.</p>
+        </li>
+        <li>
+          <p><strong>Use at least 16px font sizes.</strong> The larger the better. No one ever complains the text is too large. Save everyone some time and bump up your font sizes.</p>
+        </li>
+      </ol>
+    </section>
+  </article>
+
+</div>

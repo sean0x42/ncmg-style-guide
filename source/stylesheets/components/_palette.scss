@@ -11,13 +11,14 @@
 .palettes {
   width: 100%;
   display: grid;
-  grid-gap: 1.2rem;
-  margin: 3rem 0;
-  grid-template-columns: repeat(auto-fit, minmax(190px, 1fr));
+  grid-gap: 0;
+  margin: 5rem 0;
+  grid-template-columns: repeat(4, 1fr);
   align-items: flex-start;
+  border-radius: $border-radius;
+  overflow: hidden;
 
   .palette {
-    border-radius: $border-radius;
     overflow: hidden;
     text-align: center;
 
@@ -28,7 +29,11 @@
     pre {
       font-family: 'Roboto Mono', monospace;
       margin: 0;
-      font-size: 80%;
+      font-size: 0.84rem;
+
+      &:not(:first-child) {
+        text-transform: uppercase;
+      }
     }
   }
 }

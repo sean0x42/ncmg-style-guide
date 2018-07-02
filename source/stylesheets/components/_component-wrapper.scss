@@ -1,0 +1,37 @@
+.component-wrapper {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  list-style-type: none;
+  margin: 2rem 0;
+  padding: 0;
+  grid-gap: 2rem;
+
+  .component {
+    text-decoration: none;
+    line-height: 1.9;
+
+    img {
+      width: 100%;
+      display: block;
+      border: 1px solid $grey-light;
+      border-radius: $border-radius;
+      margin-bottom: 1.25rem;
+    }
+
+    h2 {
+      font-size: $font-size + 3px;
+      transition: color 150ms;
+    }
+
+    p {
+      color: $text;
+      margin: 0.2rem 0;
+      transition: color 150ms;
+    }
+
+    &:hover h2 {
+      color: $zesty-dark;
+    }
+
+  }
+}

@@ -2,38 +2,64 @@
 title: Iconography
 ---
 
-<article>
-  <header>
-    <p class="subtitle">Style Guide</p>
-    <h2>Iconography</h2>
-    <p>Icons can be a great way to communicate to the viewer. People of all ages, nationalities, and education levels gleam meaning from good iconography. Often times without even realising it. A well designed interface should communicate to everyone, and icons help us achieve this.</p>
-  </header>
-
-  <section>
-    <h3>Google Material Icons</h3>
-    <p><a href="https://material.io/tools/icons/?style=baseline" target="_blank">Material Icons</a> is a fantastic suite of icons from Google, made available to the public for free. It's tried and tested, a backbone of the Material Design ecosystem, and found on Android phones around the world. It comes with a number of different themes, but we'll be making use of the rounded variety, as it complements our typeface quite nicely.</p>
-  </section>
-
-  <%= image_tag "icon-samples.png", class: 'captioned' %>
-  <div class="caption">
-    <p>Some sample icons from the rounded theme</p>
+<div class="article-wrapper">
+  <div class="contents">
+    <h2>Contents</h2>
+    <ol>
+      <li><%= link_to "Iconography", "#iconography" %></li>
+      <li><%= link_to "Google Material Icons", "#google-material-icons" %></li>
+      <li><%= link_to "Guidelines", "#guidelines" %></li>
+    </ol>
+    <% link_to "/", class: 'button-secondary wide' do %>
+      <svg class="material-icons" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="24px"
+   height="24px" viewBox="0 0 24 24" enable-background="new 0 0 24 24" xml:space="preserve">
+<g id="Bounding_Boxes">
+  <path fill="none" d="M0,0h24v24H0V0z"/>
+</g>
+<g id="Rounded">
+  <path d="M19,11H7.83l4.88-4.88c0.39-0.39,0.39-1.03,0-1.42l0,0c-0.39-0.39-1.02-0.39-1.41,0l-6.59,6.59
+    c-0.39,0.39-0.39,1.02,0,1.41l6.59,6.59c0.39,0.39,1.02,0.39,1.41,0l0,0c0.39-0.39,0.39-1.02,0-1.41L7.83,13H19c0.55,0,1-0.45,1-1
+    v0C20,11.45,19.55,11,19,11z"/>
+</g>
+</svg>
+      <span>All guides</span>
+    <% end %>
   </div>
 
-  <section>
-    <p>Themes were only introduced recently (as of June 2018), so we can't access them through the more convenient web fonts just yet. If you'd like to make use of these icons, please use SVG.</p>
-  </section>
+  <article>
+    <header>
+      <p class="subtitle">Style Guide</p>
+      <h2 id="iconography">Iconography</h2>
+      <p>Icons can be a great way to communicate to the viewer. People of all ages, nationalities, and education levels gleam meaning from good iconography; often times without even realising it. A well designed interface should communicate to everyone, and icons help us achieve this.</p>
+    </header>
 
-  <section>
-    <h3>Guidelines</h3>
-    <p>Please adhere to the following guidelines when using icons on the NCMG website.</p>
-    <ol>
-      <li>
-        <p><strong>Icons should complement, not supplement.</strong> Place icons beside interactive elements for visual grepping, rather than replacing them.</p>
-      </li>
-      <li>
-        <p><strong>Deemphasize icons.</strong> The text beside them should stand out. Particularly when the icon you're using has more weight than its text.</p>
-      </li>
-    </ol>
-  </section>
+    <section>
+      <h3 id="google-material-icons">Google Material Icons</h3>
+      <p><a href="https://material.io/tools/icons/?style=baseline" target="_blank" class="anchor">Material Icons</a> is a fantastic suite of icons from Google, made available to the public for free. It's tried and tested, a backbone of the Material Design ecosystem, and found on Android phones around the world. It comes with a number of different themes, but we'll be making use of the rounded variety, as it complements our typeface quite nicely.</p>
+    </section>
 
-</article>
+    <%= image_tag "icon-samples.png", class: 'captioned' %>
+    <div class="caption">
+      <p>Some sample icons from the rounded theme</p>
+    </div>
+
+    <section>
+      <p>Themes were only introduced recently (as of June 2018), so we can't access them through the more convenient web fonts just yet. If you'd like to make use of these icons, please use SVG.</p>
+    </section>
+
+    <section>
+      <h3 id="guidelines">Guidelines</h3>
+      <p>Please adhere to the following guidelines when using icons on the NCMG website.</p>
+      <ol>
+        <li>
+          <p><strong>Icons should complement, not supplement.</strong> Place icons beside interactive elements for visual grepping, rather than replacing them.</p>
+        </li>
+        <li>
+          <p><strong>Deemphasize icons.</strong> The text beside them should stand out. Particularly when the icon you're using has more weight than its text.</p>
+        </li>
+      </ol>
+    </section>
+
+  </article>
+
+</div>

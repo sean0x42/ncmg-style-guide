@@ -1,9 +1,80 @@
+<%= image_tag "banner.png", class: 'banner' %>
+
+<h1 class="small-title">Style Guides</h2>
+
 <div class="guide-wrapper">
+
+  <ul class="guide-list">
+    
+    <!-- Branding -->
+    <li>
+      <% link_to "branding", class: 'guide' do %>
+        <h2>Branding &amp; Logos</h2>
+        <p>This guide discusses NCMG branding, both in copy and in graphics.</p>
+      <% end %>
+    </li>
+    
+    <!-- Colour -->
+    <li>
+      <% link_to "colour", class: 'guide' do %>
+        <h2>Colour Palette</h2>
+        <p>Discover NCMG's latest colour palette. Reworked from the classic green.</p>
+      <% end %>
+    </li>
+    
+    <!-- Typography -->
+    <li>
+      <% link_to "typography", class: 'guide' do %>
+        <h2>Typography</h2>
+        <p>Check out the two main type faces that will make up the NCMG website.</p>
+      <% end %>
+    </li>
+
+  </ul>
   
-  <!-- Branding -->
-  <% link_to "icons", class: 'guide' do %>
-    <%= image_tag "icon-samples.png" %>
-    <p>Icon</p>
-  <% end %>
+  <div class="featured">
+
+    <!-- Branding -->
+    <% link_to "icons", class: 'guide' do %>
+      <%= image_tag "icon-samples.png" %>
+      <h2>Iconography</h2>
+      <p>Explore the world of icons. This guide will discuss how icons will be used on the NCMG website.</p>
+    <% end %>
+
+  </div>
 
 </div>
+
+
+<h1 class="small-title">Web Components</h2>
+
+<ul class="component-wrapper">
+  
+  <!-- Buttons -->
+  <li>
+    <% link_to "components/buttons", class: 'component' do %>
+      <%= image_tag "button-banner.png" %>
+      <h2>Buttons</h2>
+      <p>A standard component, guiding the user to perform an action.</p>
+    <% end %>    
+  </li>
+  
+  <!-- Form Elements -->
+  <li>
+    <% link_to "components/form", class: 'component' do %>
+      <%= image_tag "form-banner.png" %>
+      <h2>Form Elements</h2>
+      <p>A collection of components. Each aid in collecting user input.</p>
+    <% end %>    
+  </li>
+  
+  <!-- Gallery -->
+  <li>
+    <% link_to "components/gallery", class: 'component' do %>
+      <%= image_tag "gallery-banner.png" %>
+      <h2>Image Gallery</h2>
+      <p>A simple way to show various images, whilst using little screen real estate.</p>
+    <% end %>    
+  </li>
+
+</ul>

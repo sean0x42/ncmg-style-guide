@@ -2,124 +2,179 @@
 title: Colour
 ---
 
-<article>
-  <header>
-    <h2>Colour</h2>
-    <p>Colour is the most important tool in a designer's belt. It establishes a brand's identity, and the emotions we feel when we engage with it. So it's vital that we pick a palette that not only looks right, it feels right as well.</p>
-  </header>
-
-  <section>
-    <h3>A fresh coat of paint</h3>
-    <p>Each colour has a corresponding Sass variable (hence the dollar sign). There is also an <em>inverted</em> variant of each colour grouping, accessible with the <code>-inverted</code> suffix. The inverted colour can be used for text or elements on top of it's corresponding colour.</p>
-  </section>
-
-  <div class="palettes">
-
-    <!-- Zesty -->
-    <div class="palette" style="color: hsl(145, 15%, 99%);">
-      <div style="background: hsl(145, 63%, 43%);"><pre>$zesty-dark</pre></div>
-      <div style="background: hsl(145, 63%, 47%);"><pre>$zesty</pre></div>
-      <div style="background: hsl(145, 55%, 56%);"><pre>$zesty-light</pre></div>
-      <div style="background: hsl(145, 55%, 66%);"><pre>$zesty-lighter</pre></div>
-    </div>
-
-    <!-- Licorice -->
-    <div class="palette" style="color: hsl(180, 15%, 98%);">
-      <div style="background: hsl(180, 6%, 15%);"><pre>$licorice-dark</pre></div>
-      <div style="background: hsl(180, 7%, 16%);"><pre>$licorice</pre></div>
-      <div style="background: hsl(180, 5%, 24%);"><pre>$licorice-light</pre></div>
-      <div style="background: hsl(180, 3%, 32%);"><pre>$licorice-lighter</pre></div>
-    </div>
-
-    <!-- Grey -->
-    <div class="palette" style="color: hsl(145, 15%, 30%);">
-      <div style="background: #D9DADE;"><pre>$grey</pre></div>
-      <div style="background: hsl(220, 20%, 94%);"><pre>$grey-light</pre></div>
-      <div style="background: hsl(220, 20%, 97%);"><pre>$grey-lighter</pre></div>
-      <div style="background: hsl(0, 0%, 100%); border: 2px solid hsl(220, 20%, 94%);border-top: none;color: hsl(145, 10%, 36%);"><pre>$creme</pre></div>
-    </div>
-
-    <!-- Danger -->
-    <div class="palette" style="color: hsl(8, 15%, 98%);">
-      <div style="background: hsl(8, 76%, 62%);"><pre>$danger-dark</pre></div>
-      <div style="background: hsl(8, 100%, 68%);"><pre>$danger</pre></div>
-      <div style="background: hsl(8, 100%, 74%);"><pre>$danger-light</pre></div>
-      <div style="background: hsl(8, 100%, 76%);"><pre>$danger-lighter</pre></div>
-    </div>
+<div class="article-wrapper">
+  
+  <div class="contents">
+    <h2>Contents</h2>
+    <ol>
+      <li><%= link_to "Colour Palettes", "#colour-palettes" %></li>
+      <li><%= link_to "A Fresh Coat of Paint", "#a-fresh-coast-of-paint" %></li>
+      <li><%= link_to "Colour Conversions", "#colour-conversions" %></li>
+    </ol>
+    <% link_to "/", class: 'button-secondary wide' do %>
+      <svg class="material-icons" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="24px"
+   height="24px" viewBox="0 0 24 24" enable-background="new 0 0 24 24" xml:space="preserve">
+<g id="Bounding_Boxes">
+  <path fill="none" d="M0,0h24v24H0V0z"/>
+</g>
+<g id="Rounded">
+  <path d="M19,11H7.83l4.88-4.88c0.39-0.39,0.39-1.03,0-1.42l0,0c-0.39-0.39-1.02-0.39-1.41,0l-6.59,6.59
+    c-0.39,0.39-0.39,1.02,0,1.41l6.59,6.59c0.39,0.39,1.02,0.39,1.41,0l0,0c0.39-0.39,0.39-1.02,0-1.41L7.83,13H19c0.55,0,1-0.45,1-1
+    v0C20,11.45,19.55,11,19,11z"/>
+</g>
+</svg>
+      <span>All guides</span>
+    <% end %>
   </div>
 
-  <section>
-    <h3>Non-Sass environments</h3>
-    <p>If you need the branding colours outside of a Sass related environment (Photoshop, Illustrator etc.) then the following colour codes may come in handy.</p>
+  <article>
+    <header>
+      <p class="subtitle">Style Guide</p>
+      <h2 id="colour-palettes">Colour Palettes</h2>
+      <p>Colour is the most important tool in a designer's belt. It establishes a brand's identity, and the emotions we feel when we engage with it. So it's vital that we pick a palette that not only looks right, it feels right as well.</p>
+    </header>
 
-    <div class="colour-map">
+    <section>
+      <h3 id="a-fresh-coast-of-paint">A fresh coat of paint</h3>
+      <p>Each colour in the following palette contains three (3) important pieces of information.</p>
+      <ol>
+        <li>
+          <p>A Sass variable, prefixed with a dollar sign ($). These variables are available for use on the website.</p>
+        </li>
+        <li>
+          <p>A hexadecimal colour code, prefixed with a hash (#). This colour code can be used in any non-Sass environments, such as Photoshop or Illustrator.</p>
+        </li>
+        <li>
+          <p>An inverted, hexadecimal colour code. Use this colour for text, or when inverting colour schemes.</p>
+        </li>
+      </ol>
+      <p>For Sass environments, you can give any colour variable a suffix of <code>-inverted</code> to access its inverted variant. </p>
+    </section>
+
+    <div class="palettes">
 
       <!-- Zesty -->
-      <div style="background: hsl(145, 63%, 47%);"></div>
-      <ul>
-        <li><strong>HSL:</strong> 145&deg;, 63%, 47%</li>
-        <li><strong>RGB:</strong> 44, 195, 107</li>
-        <li><strong>Hex:</strong> #2CC36B</li>
-        <li><strong>CMYK:</strong> 77, 0, 45, 24</li>
-      </ul>
+      <div class="palette" style="text-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);">
+
+        <div style="background: hsl(145, 63%, 43%);color: hsl(145, 15%, 99%);">
+          <pre>$zesty-dark</pre>
+          <pre>#29b362</pre>
+          <pre>#fcfdfc</pre>
+        </div>
+
+        <div style="background: hsl(145, 63%, 47%);color: hsl(145, 15%, 100%);">
+          <pre>$zesty</pre>
+          <pre>#2cc36b</pre>
+          <pre>#ffffff</pre>
+        </div>
+
+        <div style="background: hsl(145, 55%, 56%);color: hsl(145, 15%, 97%);">
+          <pre>$zesty-light</pre>
+          <pre>#51cd85</pre>
+          <pre>#f6f8f7</pre>
+        </div>
+
+        <div style="background: hsl(145, 55%, 66%);color: hsl(145, 15%, 99%);">
+          <pre>$zesty-lighter</pre>
+          <pre>#79d8a0</pre>
+          <pre>#fcfdfc</pre>
+        </div>
+
+      </div>
 
       <!-- Licorice -->
-      <div style="background: #262C2C;"></div>
-      <ul>
-        <li><strong>HSL:</strong> 180&deg;, 7%, 16%</li>
-        <li><strong>RGB:</strong> 38, 44, 44</li>
-        <li><strong>Hex:</strong> #262C2C</li>
-        <li><strong>CMYK:</strong> 14, 0, 0, 83</li>
-      </ul>
+      <div class="palette">
+
+        <div style="background: hsl(180, 6%, 15%);color: hsl(180, 15%, 91%);">
+          <pre>$licorice-dark</pre>
+          <pre>#242929</pre>
+          <pre>#e5ebeb</pre>
+        </div>
+
+        <div style="background: hsl(180, 7%, 16%);color: hsl(180, 15%, 90%);">
+          <pre>$licorice</pre>
+          <pre>#262c2c</pre>
+          <pre>#e2e9e9</pre>
+        </div>
+
+        <div style="background: hsl(180, 5%, 24%);color: hsl(180, 15%, 92%);">
+          <pre>$licorice-light</pre>
+          <pre>#3a4040</pre>
+          <pre>#e8eeee</pre>
+        </div>
+
+        <div style="background: hsl(180, 3%, 32%);color: hsl(180, 15%, 94%);">
+          <pre>$licorice-lighter</pre>
+          <pre>#4f5454</pre>
+          <pre>#edf2f2</pre>
+        </div>
+
+      </div>
 
       <!-- Grey -->
-      <div style="background: hsl(228, 7%, 86.1%);"></div>
-      <ul>
-        <li><strong>HSL:</strong> 228&deg;, 7%, 86%</li>
-        <li><strong>RGB:</strong> 217, 218, 222</li>
-        <li><strong>Hex:</strong> #D9DADE</li>
-        <li><strong>CMYK:</strong> 2, 2, 0, 13</li>
-      </ul>
+      <div class="palette">
 
-      <!-- Creme -->
-      <div style="background: hsl(0, 0%, 100%); border: 2px solid hsl(228, 7%, 86.1%);"></div>
-      <ul>
-        <li><strong>HSL:</strong> 0&deg;, 0%, 100%</li>
-        <li><strong>RGB:</strong> 255, 255, 255</li>
-        <li><strong>Hex:</strong> #FFFFFF</li>
-        <li><strong>CMYK:</strong> 0, 0, 0, 0</li>
-      </ul>
+        <div style="background: hsl(220, 7%, 86%); color: hsl(220, 15%, 26%);">
+          <pre>$grey</pre>
+          <pre>#D9DADE</pre>
+          <pre>#383f4c</pre>
+        </div>
+
+        <div style="background: hsl(220, 20%, 94%); color: hsl(220, 15%, 30%);">
+          <pre>$grey-light</pre>
+          <pre>#edeff3</pre>
+          <pre>#414958</pre>
+        </div>
+
+        <div style="background: hsl(220, 20%, 97%); color: hsl(220, 15%, 34%);">
+          <pre>$grey-lighter</pre>
+          <pre>#f6f7f9</pre>
+          <pre>#4a5264</pre>
+        </div>
+
+        <div style="background: hsl(0, 0%, 100%); border: 1px solid hsl(220, 20%, 94%);border-top: none;color: hsl(220, 10%, 36%);">
+          <pre>$creme</pre>
+          <pre>#ffffff</pre>
+          <pre>#535965</pre>
+        </div>
+
+      </div>
 
       <!-- Danger -->
-      <div style="background: hsl(8, 100%, 68%);"></div>
-      <ul>
-        <li><strong>HSL:</strong> 8&deg;, 100%, 68%</li>
-        <li><strong>RGB:</strong> 255, 114, 92</li>
-        <li><strong>Hex:</strong> #FF725C</li>
-        <li><strong>CMYK:</strong> 0, 55, 64, 0</li>
-      </ul>
+      <div class="palette" style="text-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);">
 
+        <div style="background: hsl(8, 76%, 62%); color: hsl(8, 15%, 95%);">
+          <pre>$danger-dark</pre>
+          <pre>#e86854</pre>
+          <pre>#f4f1f0</pre>
+        </div>
+
+        <div style="background: hsl(8, 100%, 68%); color: hsl(8, 15%, 96%);">
+          <pre>$danger</pre>
+          <pre>#ff725c</pre>
+          <pre>#f6f4f3</pre>
+        </div>
+
+        <div style="background: hsl(8, 100%, 74%); color: hsl(8, 15%, 96%);">
+          <pre>$danger-light</pre>
+          <pre>#ff8c7a</pre>
+          <pre>#f6f4f3</pre>
+        </div>
+
+        <div style="background: hsl(8, 100%, 76%); color: hsl(8, 15%, 96%);">
+          <pre>$danger-lighter</pre>
+          <pre>#ff9585</pre>
+          <pre>#f6f4f3</pre>
+        </div>
+
+      </div>
     </div>
-  </section>
 
-  <section>
-    <h3>Colour ratios</h3>
-    <p>When representing the NCMG brand, do your best to follow the below ratios. Note that Zesty is not meant to be used on mass, only as an accent colour.</p>
-  </section>
+    <section>
+      <h3 id="colour-conversions">Colour conversions</h3>
+      <p>If you need the above colour codes in CMYK, HSL or RGB, I suggest copying the hexadecimal codes from above and pasting them into a tool like <%= link_to "Convert A Colour", "http://www.convertacolor.com/", target: "_blank", class: 'anchor' %>, or any of the many other available websites.</p>
+    </section>
+    
+  </article>
 
-  <div class="colour-ratios">
-
-    <!-- Labels -->
-    <p>~19%</p>
-    <p>~79%</p>
-    <p>~2%</p>
-
-    <!-- Colours -->
-    <div class="colour" style="background: hsl(180, 7%, 16%); color: hsl(180, 15%, 98%); border-radius: 3px 0 0 3px;"></div>
-    <div class="colour" style="background: hsl(0, 0%, 100%); color: hsl(145, 10%, 36%); border-top: 2px solid hsl(220, 20%, 94%); border-bottom: 2px solid hsl(220, 20%, 94%);"></div>
-    <div class="colour" style="background: hsl(145, 63%, 47%); color: hsl(145, 15%, 99%); border-radius: 0 3px 3px 0;"></div>
- 
-  </div>
-  
-
-</article>
+</div>
