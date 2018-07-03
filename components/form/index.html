@@ -1,17 +1,17 @@
 <!DOCTYPE html>
 <html lang="en-AU">
 <head>
-  <title>Style Guide &middot; North Coast Marble &amp; Granite</title>
+  <title>Form Elements &middot; North Coast Marble &amp; Granite</title>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=1, maximum-scale: 1.0"/>
   <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
   <link href="https://fonts.googleapis.com/css?family=Roboto+Mono:400,700" rel="stylesheet"> 
-  <link href="stylesheets/modern-normalize.css" rel="stylesheet" /><link href="stylesheets/app.css" rel="stylesheet" />
+  <link href="../../stylesheets/modern-normalize.css" rel="stylesheet" /><link href="../../stylesheets/app.css" rel="stylesheet" />
 </head>
 <body>
   <div class="header">
   <div class="header-wrapper">
-<a href="/" class="logo-wrapper">      <img src="images/logo.svg" class="logo" alt="North Coast Marble &amp; Granite" />
+<a href="/" class="logo-wrapper">      <img src="../../images/logo.svg" class="logo" alt="North Coast Marble &amp; Granite" />
       <h1>Style Guide</h1>
 </a><a href="http://www.ncmg.com.au/" class="button-secondary" target="_blank">      <svg class="material-icons" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="24px"
    height="24px" viewBox="0 0 24 24" enable-background="new 0 0 24 24" xml:space="preserve">
@@ -65,72 +65,51 @@
 </a>  </div>
 </div>
   <div class="wrapper">
-    <img src="images/banner.png" class="banner" alt="Banner" />
+    <div class="article-wrapper">
+  <article>
+    <header>
+      <p class="subtitle">Component</p>
+      <h2 id="form-elements">Form Elements</h2>
+      <p>Web forms come with a range of different input types. From check boxes, to text fields, to date and time pickers. This great variety is a blessing for websites that need to collect a lot of information. The NCMG website however, only needs a few of these, and they'll be discussed here.</p>
+    </header>
 
-<h1 class="small-title">Style Guides</h2>
+    <section>
+      <h3 id="text-fields">Text Fields</h3>
+      <p>The NCMG website will require text fields for the contact us form, as well as the admin panel when logging in or giving an image a title. The standard, unstyled text box looks like this:</p>
+      <input type="text" placeholder="Type in me!" class="unstyled"><br/>
+      <p>The appearance of text fields varies depending on the browser, so what you see on Chrome or Safari is entirely different to what you'd see in Firefox for example. The reworked text fields for NCMG look like this:</p>
+      <label>First name</label><br/>
+      <input type="text" placeholder="e.g. Sean">
+      <p>You can also bring icons into the equation for improved visual grepping. Check out the <a href="../icons" class="anchor">Icons style guide</a> for more details.</p>
+    </section>
 
-<div class="guide-wrapper">
+    <section>
+      <h3 id="check-boxes">Check boxes</h3>
+      <p>Check boxes are useful for enforcing a boolean response. Either true or false. By default, their appearance is as follows:</p>
+    </section>
+  </article>
 
-  <ul class="guide-list">
-    
-    <!-- Branding -->
-    <li>
-<a href="branding" class="guide">        <h2>Branding &amp; Logos</h2>
-        <p>This guide discusses NCMG branding, both in copy and in graphics.</p>
-</a>    </li>
-    
-    <!-- Colour -->
-    <li>
-<a href="colour" class="guide">        <h2>Colour Palette</h2>
-        <p>Discover NCMG's latest colour palette. Reworked from the classic green.</p>
-</a>    </li>
-    
-    <!-- Typography -->
-    <li>
-<a href="typography" class="guide">        <h2>Typography</h2>
-        <p>Check out the two main type faces that will make up the NCMG website.</p>
-</a>    </li>
-
-  </ul>
-  
-  <div class="featured">
-
-    <!-- Branding -->
-<a href="icons" class="guide">      <img src="images/icon-samples.png" alt="Icon samples" />
-      <h2>Iconography</h2>
-      <p>Explore the world of icons. This guide will discuss how icons will be used on the NCMG website.</p>
-</a>
-  </div>
-
+  <div class="contents">
+    <h2>Contents</h2>
+    <ol>
+      <li><a href="#form-elements">Form Elements</a></li>
+      <li><a href="#text-fields">Text Fields</a></li>
+      <li><a href="#check-boxes">Check Boxes</a></li>
+    </ol>
+<a href="/" class="button-secondary wide">      <svg class="material-icons" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="24px"
+   height="24px" viewBox="0 0 24 24" enable-background="new 0 0 24 24" xml:space="preserve">
+<g id="Bounding_Boxes">
+  <path fill="none" d="M0,0h24v24H0V0z"/>
+</g>
+<g id="Rounded">
+  <path d="M19,11H7.83l4.88-4.88c0.39-0.39,0.39-1.03,0-1.42l0,0c-0.39-0.39-1.02-0.39-1.41,0l-6.59,6.59
+    c-0.39,0.39-0.39,1.02,0,1.41l6.59,6.59c0.39,0.39,1.02,0.39,1.41,0l0,0c0.39-0.39,0.39-1.02,0-1.41L7.83,13H19c0.55,0,1-0.45,1-1
+    v0C20,11.45,19.55,11,19,11z"/>
+</g>
+</svg>
+      <span>All guides</span>
+</a>  </div>
 </div>
-
-
-<h1 class="small-title">Web Components</h2>
-
-<ul class="component-wrapper">
-  
-  <!-- Buttons -->
-  <li>
-<a href="components/buttons" class="component">      <img src="images/button-banner.png" alt="Button banner" />
-      <h2>Buttons</h2>
-      <p>A standard component, guiding the user to perform an action.</p>
-</a>  </li>
-  
-  <!-- Form Elements -->
-  <li>
-<a href="components/form" class="component">      <img src="images/form-banner.png" alt="Form banner" />
-      <h2>Form Elements</h2>
-      <p>A collection of components. Each aid in collecting user input.</p>
-</a>  </li>
-  
-  <!-- Gallery -->
-  <li>
-<a href="components/gallery" class="component">      <img src="images/gallery-banner.png" alt="Gallery banner" />
-      <h2>Image Gallery</h2>
-      <p>A simple way to show various images, whilst using little screen real estate.</p>
-</a>  </li>
-
-</ul>
     <div class="footer">
     <p class="copyright">North Coast Marble &amp; Granite &copy; 2018</p>
     <p class="copyright">Created by <a href="https://www.seanbailey.io" class="anchor">Sean Bailey</a>.</p>

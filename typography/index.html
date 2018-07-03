@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en-AU">
 <head>
-  <title>Iconography &middot; North Coast Marble &amp; Granite</title>
+  <title>Typography &middot; North Coast Marble &amp; Granite</title>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=1, maximum-scale: 1.0"/>
   <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
@@ -70,43 +70,55 @@
   <article>
     <header>
       <p class="subtitle">Style Guide</p>
-      <h2 id="iconography">Iconography</h2>
-      <p>Icons can be a great way to communicate to the viewer. People of all ages, nationalities, and education levels gleam meaning from good iconography; often times without even realising it. A well designed interface should communicate to everyone, and icons help us achieve this.</p>
+      <h2 id="typography">Typography</h2>
+      <p>Good typography seems simple. On the surface, it comes down to a typeface that reflects the emotion that a website is trying to convey. However, it's actually far more complex than this. It also comes down to attributes like line height, font weight, kerning and more.</p>
     </header>
 
     <section>
-      <h3 id="google-material-icons">Google Material Icons</h3>
-      <p><a href="https://material.io/tools/icons/?style=baseline" target="_blank" class="anchor">Material Icons</a> is a fantastic suite of icons from Google, made available to the public for free. It's tried and tested, a backbone of the Material Design ecosystem, and found on Android phones around the world. It comes with a number of different themes, but we'll be making use of the rounded variety, as it complements our typeface quite nicely.</p>
+      <h3 id="introducing-inter-ui">Introducing Inter UI</h3>
+      <p>The NCMG website has two separate typefaces (or fonts). The primary of which, is <a href="https://rsms.me/inter/" target="_blank" class="anchor">Inter UI</a>. Inter UI is a free body font, that is designed to look great on small to medium sized displays. It takes inspiration from power houses like Roboto (from Google) and San Francisco (from Apple). It's an excellent all round font, that works well with the NCMG branding.</p> 
+      <p>If you'd like to use it in a Sass environment you can access it (and it's font stack) with <code>$font-stack</code>. This includes the system font as a fall back.</p>
     </section>
 
-    <img src="../images/icon-samples.png" class="captioned" alt="Icon samples" />
+    <img src="../images/inter-ui-sample.png" class="captioned" alt="Inter ui sample" />
     <div class="caption">
-      <p>Some sample icons from the rounded theme</p>
+      <p>An Inter UI Sample (courtesy of https://rsms.me/inter/)</p>
     </div>
 
     <section>
-      <p>Themes were only introduced recently (as of June 2018), so we can't access them through the more convenient web fonts just yet. If you'd like to make use of these icons, please use SVG.</p>
+      <h3 id="for-the-technical-side">For the technical side</h3>
+      <p>Sometimes, you need to express things in more technical terms. That's where a monospace font comes in to play. The NCMG website also has a standard monospace typeface, called <a href="https://fonts.google.com/specimen/Roboto+Mono" target="_blank" class="anchor">Roboto Mono</a>. <span class="monospace">You can use Roboto Mono whenever you like, by using the Sass variable <code>$monospace</code>.</span></p>
     </section>
 
     <section>
       <h3 id="guidelines">Guidelines</h3>
-      <p>Please adhere to the following guidelines when using icons on the NCMG website.</p>
+      <p>The following rules should help you keep your typography beautiful.</p>
       <ol>
         <li>
-          <p><strong>Icons should complement, not supplement.</strong> Place icons beside interactive elements for visual grepping, rather than replacing them.</p>
+          <p><strong>Keep line heights high</strong>. The text you're currently reading has a line height of 1.9! It's insane I know. But it improves readability massively. The more text breathes the easier it is to read (within reason of course).</p>
         </li>
         <li>
-          <p><strong>Deemphasize icons.</strong> The text beside them should stand out. Particularly when the icon you're using has more weight than its text.</p>
+          <p><strong>Keep line length short</strong>. The human eye gets tired if it has to read text with more than 80 characters per line. The text you're currently reading is limited to 70 characters. CSS has a criminally underrated <code>ch</code> unit, which specifies sizes according to a number of characters.</p>
+        </li>
+        <li>
+          <p><strong>Use grey, not black</strong>. Black can be straining on the eyes. Use grey instead. If you're in a Sass environment, use <code>$text</code> for text colour, as it's a grey saturated with <code>$zesty</code>.</p>
+        </li>
+        <li>
+          <p><strong>Use colour and weight to emphasize or de-emphasize text.</strong> It's better than changing the font size.</p>
+        </li>
+        <li>
+          <p><strong>Use at least 16px font sizes.</strong> The larger the better. No one ever complains the text is too large. Save everyone some time and bump up your font sizes.</p>
         </li>
       </ol>
     </section>
-
   </article>
+  
   <div class="contents">
     <h2>Contents</h2>
     <ol>
-      <li><a href="#iconography">Iconography</a></li>
-      <li><a href="#google-material-icons">Google Material Icons</a></li>
+      <li><a href="#typography">Typography</a></li>
+      <li><a href="#introducing-inter-ui">Introducing Inter UI</a></li>
+      <li><a href="#for-the-technical-side">For the Technical Side</a></li>
       <li><a href="#guidelines">Guidelines</a></li>
     </ol>
 <a href="/" class="button-secondary wide">      <svg class="material-icons" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="24px"
