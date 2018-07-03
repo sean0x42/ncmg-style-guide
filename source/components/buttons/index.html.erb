@@ -2,30 +2,6 @@
 title: Buttons
 ---
 <div class="article-wrapper">
-  <div class="contents">
-    <h2>Contents</h2>
-    <ol>
-      <li><%= link_to "Buttons", "#buttons" %></li>
-      <li><%= link_to "Standard Buttons", "#standard-buttons" %></li>
-      <li><%= link_to "Creating a Hierarchy", "#creating-a-hierarchy" %></li>
-      <li><%= link_to "Adding an Icon", "#adding-an-icon" %></li>
-      <li><%= link_to "Danger Variants", "#danger-variants" %></li>
-    </ol>
-    <% link_to "/", class: 'button-secondary wide' do %>
-      <svg class="material-icons" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="24px"
-   height="24px" viewBox="0 0 24 24" enable-background="new 0 0 24 24" xml:space="preserve">
-<g id="Bounding_Boxes">
-  <path fill="none" d="M0,0h24v24H0V0z"/>
-</g>
-<g id="Rounded">
-  <path d="M19,11H7.83l4.88-4.88c0.39-0.39,0.39-1.03,0-1.42l0,0c-0.39-0.39-1.02-0.39-1.41,0l-6.59,6.59
-    c-0.39,0.39-0.39,1.02,0,1.41l6.59,6.59c0.39,0.39,1.02,0.39,1.41,0l0,0c0.39-0.39,0.39-1.02,0-1.41L7.83,13H19c0.55,0,1-0.45,1-1
-    v0C20,11.45,19.55,11,19,11z"/>
-</g>
-</svg>
-      <span>All guides</span>
-    <% end %>
-  </div>
 
   <article>
     <header>
@@ -38,11 +14,11 @@ title: Buttons
       <h3 id="standard-buttons">Standard Buttons</h3>
       <p>Every button is designed to be wrapped inside a <code>div</code> (or other block element) of class <code>.buttons</code>. This wrapper aligns buttons beside each other, and prevents them from filling the available space horizontally. So, you might have markup that looks something like the following:</p>
       <pre><code>&lt;div <em>class="buttons"</em>&gt;
-    &lt;a href="/" <em>class="button"</em>&gt;Send message&lt;/a&gt;
-  &lt;/div&gt;</code></pre>
+  &lt;a href="/" <em>class="button"</em>&gt;Send message&lt;/a&gt;
+&lt;/div&gt;</code></pre>
       <p>Which would result in the following in the DOM:</p>
       <div class="buttons">
-        <a href="/" class="button">Send message</a>
+        <div class="button">Send message</div>
       </div>
     </section>
 
@@ -50,15 +26,15 @@ title: Buttons
       <h3 id="creating-a-hierarchy">Creating a Hierarchy</h3>
       <p>This is great, but sometimes buttons need a visual hierarchy. We want users to be drawn to particular buttons first, and we achieve this by deemphasizing elements as needed. Enter <code>.button-secondary</code> and <code>.button-tertiary</code>.</p>
       <pre><code>&lt;div class="buttons"&gt;
-    &lt;a href="/" <em>class="button"</em>&gt;Save changes&lt;/a&gt;
-    &lt;a href="/" <em>class="button-secondary"</em>&gt;Open file&lt;/a&gt;
-    &lt;a href="/" <em>class="button-tertiary"</em>&gt;Cancel&lt;/a&gt;
-  &lt;/div&gt;</code></pre>
+  &lt;a href="/" <em>class="button"</em>&gt;Save changes&lt;/a&gt;
+  &lt;a href="/" <em>class="button-secondary"</em>&gt;Open file&lt;/a&gt;
+  &lt;a href="/" <em>class="button-tertiary"</em>&gt;Cancel&lt;/a&gt;
+&lt;/div&gt;</code></pre>
 
       <div class="buttons">
-        <a href="/" class="button">Save changes</a>
-        <a href="/" class="button-secondary">Open file</a>
-        <a href="/" class="button-tertiary">Cancel</a>
+        <div class="button">Save changes</div>
+        <div class="button-secondary">Open file</div>
+        <div class="button-tertiary">Cancel</div>
       </div>
     </section>
 
@@ -66,14 +42,14 @@ title: Buttons
       <h3 id="adding-an-icon">Adding an icon</h3>
       <p>All of the aforementioned buttons support icons out of the box, either as SVGs or as part of the Material Icons web font. Just be sure to wrap your message in a span.</p>
       <pre><code>&lt;div class="buttons"&gt;
-    &lt;a href="/" class="button"&gt;
-      <em>&lt;svg class="material-icons"&gt;...&lt;/svg&gt;</em>
-      &lt;span&gt;Send message&lt;/span&gt;
-    &lt;/a&gt;
-  &lt;/div&gt;</code></pre>
+  &lt;a href="/" class="button"&gt;
+    <em>&lt;svg class="material-icons"&gt;...&lt;/svg&gt;</em>
+    &lt;span&gt;Send message&lt;/span&gt;
+  &lt;/a&gt;
+&lt;/div&gt;</code></pre>
       <p>Which would result in the following in the DOM:</p>
       <div class="buttons">
-        <a href="/" class="button">
+        <div class="button">
           <svg class="material-icons" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="24px"
      height="24px" viewBox="0 0 24 24" enable-background="new 0 0 24 24" xml:space="preserve">
   <g id="Header_x2F_BG" display="none">
@@ -121,7 +97,7 @@ title: Buttons
   </g>
   </svg>
           <span>Send message</span>
-        </a>
+        </div>
       </div>
     </section>
 
@@ -130,18 +106,42 @@ title: Buttons
       <p>Each button also has a danger variant. Use this style when an action has potentially dangerous consequences.</p>
 
       <pre><code class="hljs html">&lt;div class="buttons"&gt;
-    &lt;a href="/" class="button <em>danger</em>"&gt;Delete image&lt;/a&gt;
-    &lt;a href="/" class="button-secondary <em>danger</em>"&gt;Rename item&lt;/a&gt;
-    &lt;a href="/" class="button-tertiary <em>danger</em>"&gt;Cancel upload&lt;/a&gt;
-  &lt;/div&gt;
-  </code></pre>
+  &lt;a href="/" class="button <em>danger</em>"&gt;Delete image&lt;/a&gt;
+  &lt;a href="/" class="button-secondary <em>danger</em>"&gt;Rename item&lt;/a&gt;
+  &lt;a href="/" class="button-tertiary <em>danger</em>"&gt;Cancel upload&lt;/a&gt;
+&lt;/div&gt;</code></pre>
       
       <div class="buttons">
-        <a href="/" class="button danger">Delete image</a>
-        <a href="/" class="button-secondary danger">Rename item</a>
-        <a href="/" class="button-tertiary danger">Cancel upload</a>
+        <div class="button danger">Delete image</div>
+        <div class="button-secondary danger">Rename item</div>
+        <div class="button-tertiary danger">Cancel upload</div>
       </div>
     </section>
   </article>
+
+  <div class="contents">
+    <h2>Contents</h2>
+    <ol>
+      <li><%= link_to "Buttons", "#buttons" %></li>
+      <li><%= link_to "Standard Buttons", "#standard-buttons" %></li>
+      <li><%= link_to "Creating a Hierarchy", "#creating-a-hierarchy" %></li>
+      <li><%= link_to "Adding an Icon", "#adding-an-icon" %></li>
+      <li><%= link_to "Danger Variants", "#danger-variants" %></li>
+    </ol>
+    <% link_to "/", class: 'button-secondary wide' do %>
+      <svg class="material-icons" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="24px"
+   height="24px" viewBox="0 0 24 24" enable-background="new 0 0 24 24" xml:space="preserve">
+<g id="Bounding_Boxes">
+  <path fill="none" d="M0,0h24v24H0V0z"/>
+</g>
+<g id="Rounded">
+  <path d="M19,11H7.83l4.88-4.88c0.39-0.39,0.39-1.03,0-1.42l0,0c-0.39-0.39-1.02-0.39-1.41,0l-6.59,6.59
+    c-0.39,0.39-0.39,1.02,0,1.41l6.59,6.59c0.39,0.39,1.02,0.39,1.41,0l0,0c0.39-0.39,0.39-1.02,0-1.41L7.83,13H19c0.55,0,1-0.45,1-1
+    v0C20,11.45,19.55,11,19,11z"/>
+</g>
+</svg>
+      <span>All guides</span>
+    <% end %>
+  </div>
 
 </div>

@@ -1,0 +1,51 @@
+---
+title: Form Elements
+---
+
+<div class="article-wrapper">
+  <article>
+    <header>
+      <p class="subtitle">Component</p>
+      <h2 id="form-elements">Form Elements</h2>
+      <p>Web forms come with a range of different input types. From check boxes, to text fields, to date and time pickers. This great variety is a blessing for websites that need to collect a lot of information. The NCMG website however, only needs a few of these, and they'll be discussed here.</p>
+    </header>
+
+    <section>
+      <h3 id="text-fields">Text Fields</h3>
+      <p>The NCMG website will require text fields for the contact us form, as well as the admin panel when logging in or giving an image a title. The standard, unstyled text box looks like this:</p>
+      <input type="text" placeholder="Type in me!" class="unstyled"><br/>
+      <p>The appearance of text fields varies depending on the browser, so what you see on Chrome or Safari is entirely different to what you'd see in Firefox for example. The reworked text fields for NCMG look like this:</p>
+      <label>First name</label><br/>
+      <input type="text" placeholder="e.g. Sean">
+      <p>You can also bring icons into the equation for improved visual grepping. Check out the <%= link_to "Icons style guide", "../icons", class: 'anchor' %> for more details.</p>
+    </section>
+
+    <section>
+      <h3 id="check-boxes">Check boxes</h3>
+      <p>Check boxes are useful for enforcing a boolean response. Either true or false. By default, their appearance is as follows:</p>
+    </section>
+  </article>
+
+  <div class="contents">
+    <h2>Contents</h2>
+    <ol>
+      <li><%= link_to "Form Elements", "#form-elements" %></li>
+      <li><%= link_to "Text Fields", "#text-fields" %></li>
+      <li><%= link_to "Check Boxes", "#check-boxes" %></li>
+    </ol>
+    <% link_to "/", class: 'button-secondary wide' do %>
+      <svg class="material-icons" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="24px"
+   height="24px" viewBox="0 0 24 24" enable-background="new 0 0 24 24" xml:space="preserve">
+<g id="Bounding_Boxes">
+  <path fill="none" d="M0,0h24v24H0V0z"/>
+</g>
+<g id="Rounded">
+  <path d="M19,11H7.83l4.88-4.88c0.39-0.39,0.39-1.03,0-1.42l0,0c-0.39-0.39-1.02-0.39-1.41,0l-6.59,6.59
+    c-0.39,0.39-0.39,1.02,0,1.41l6.59,6.59c0.39,0.39,1.02,0.39,1.41,0l0,0c0.39-0.39,0.39-1.02,0-1.41L7.83,13H19c0.55,0,1-0.45,1-1
+    v0C20,11.45,19.55,11,19,11z"/>
+</g>
+</svg>
+      <span>All guides</span>
+    <% end %>
+  </div>
+</div>

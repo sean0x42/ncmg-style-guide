@@ -1,9 +1,11 @@
 .article-wrapper {
   display: grid;
-  grid-template-columns: 260px 1fr;
+  grid-template-columns: 1fr 260px;
   grid-gap: 2.5rem;
-  margin-top: 3rem;
+  margin-top: 0.5rem;
+  padding-top: 4rem;
   align-items: flex-start;
+  border-top: 1px solid $grey-light;
 
   .contents {
     position: sticky;
@@ -11,7 +13,8 @@
 
     ol {
       line-height: 1.9;
-      border-radius: $border-radius;
+      border-radius: $border-radius $border-radius 0 0;
+      border: 1px solid $grey-light;
       background: $grey-lighter;
       padding: 1rem;
       margin: 1rem 0 0;
@@ -19,20 +22,19 @@
       counter-reset: items;
 
       li:before {
-        font-family: $monospace;
         counter-increment: items;
-        content: counter(items) " ";
+        content: counter(items) ". ";
         color: lighten($text, 15%);
       }
     }
 
     h2 {
       margin: 0.25rem 0;
-      color: lighten($text, 10%);
+      color: lighten($text, 25%);
       text-transform: uppercase;
       font-weight: bold;
       letter-spacing: 1px;
-      font-size: 0.8rem;
+      font-size: 0.75rem;
     }
 
     a:not(.button-secondary) {
@@ -47,7 +49,11 @@
     }
 
     .button-secondary {
-      margin-top: 2rem;
+      margin-top: 0;
+      border-top: none;
+      border-radius: 0 0 $border-radius $border-radius;
+      padding-top: 1rem;
+      padding-bottom: 1rem;
     }
   }
 }

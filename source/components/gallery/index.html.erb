@@ -1,0 +1,41 @@
+---
+title: Image Gallery
+---
+
+<div class="article-wrapper">
+  <article>
+    <header>
+      <p class="subtitle">Component</p>
+      <h2 id="image-gallery">Image Gallery</h2>
+      <p>If all goes as currently planned, the NCMG website will have two separate image galleries. The first of which will be a <em>carousel</em>. Users can click buttons to cycle left and right through the images. After this gallery, we'll have a sort of collage, which allows administrators to add as many images as they want. This article will be discussing the former.</p>
+    </header>
+
+    <section>
+      <h3 id="demonstration">Demonstration</h3>
+      <p>You can create a carousel using the following markup:</p>
+      <pre><code>&lt;</code></pre>
+    </section>
+  </article>
+
+  <div class="contents">
+    <h2>Contents</h2>
+    <ol>
+      <li><%= link_to "Image Gallery", "#image-gallery" %></li>
+      <li><%= link_to "Demonstration", "#demonstration" %></li>
+    </ol>
+    <% link_to "/", class: 'button-secondary wide' do %>
+      <svg class="material-icons" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="24px"
+   height="24px" viewBox="0 0 24 24" enable-background="new 0 0 24 24" xml:space="preserve">
+<g id="Bounding_Boxes">
+  <path fill="none" d="M0,0h24v24H0V0z"/>
+</g>
+<g id="Rounded">
+  <path d="M19,11H7.83l4.88-4.88c0.39-0.39,0.39-1.03,0-1.42l0,0c-0.39-0.39-1.02-0.39-1.41,0l-6.59,6.59
+    c-0.39,0.39-0.39,1.02,0,1.41l6.59,6.59c0.39,0.39,1.02,0.39,1.41,0l0,0c0.39-0.39,0.39-1.02,0-1.41L7.83,13H19c0.55,0,1-0.45,1-1
+    v0C20,11.45,19.55,11,19,11z"/>
+</g>
+</svg>
+      <span>All guides</span>
+    <% end %>
+  </div>
+</div>
