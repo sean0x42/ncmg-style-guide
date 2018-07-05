@@ -7,6 +7,7 @@
   <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
   <link href="https://fonts.googleapis.com/css?family=Roboto+Mono:400,700" rel="stylesheet"> 
   <link href="../../stylesheets/modern-normalize.css" rel="stylesheet" /><link href="../../stylesheets/app.css" rel="stylesheet" />
+  <script src="../../javascripts/checkbox.js"></script>
 </head>
 <body>
   <div class="header">
@@ -86,6 +87,16 @@
     <section>
       <h3 id="check-boxes">Check boxes</h3>
       <p>Check boxes are useful for enforcing a boolean response. Either true or false. By default, their appearance is as follows:</p>
+      <input type="checkbox" id="remember" name="remember" class="unstyled">
+      <label for="remember">Remember me</label>
+      <p>Much like text boxes, the appearance of this check box depends on your browser. Therefore, we'll rebuild something a bit more consistent.</p>
+      <div class="checkbox">
+        <input type="checkbox" id="achieve-sentience" name="achieve_sentience">
+        <label for="achieve_sentience">
+          <i class="material-icons">&#xE835;</i>
+          <span>Achieve sentience</span>
+        </label>
+      </div>
     </section>
   </article>
 
