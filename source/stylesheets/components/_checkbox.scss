@@ -1,0 +1,32 @@
+.checkbox {
+  transition: color 300ms;
+
+  input {
+    @include hidden();
+  }
+
+  label {
+    display: flex;
+    align-items: center;
+
+    i {
+      @include no-highlight();
+      color: darken($grey, 10%);
+      cursor: pointer;
+      line-height: 1;
+      vertical-align: middle;
+      margin: -3px;
+      margin-right: 5px;
+    }
+
+    span {
+      vertical-align: middle;
+    }
+
+  }
+
+  &.active i { 
+    color: $zesty; 
+  }
+
+}
