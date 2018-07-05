@@ -17,8 +17,8 @@ const iconEntities = {
 
 const updateCheckbox = function (checkbox) {
   console.log(checkbox);
-  let input = checkbox.querySelector("input[type='checkbox']");
-  let icon  = checkbox.querySelector("i.material-icons");
+  var input = checkbox.querySelector("input[type='checkbox']");
+  var icon  = checkbox.querySelector("i.material-icons");
   if (input.checked) {
     checkbox.classList.add("active");
     icon.innerHTML = iconEntities.CHECKED;
@@ -30,7 +30,7 @@ const updateCheckbox = function (checkbox) {
 
 
 const delegatedChangeHandler = function (event) {
-  let target = event.target;
+  var target = event.target;
 
   // Find parent
   while (!target.classList.contains("checkbox")) {
@@ -43,7 +43,7 @@ const delegatedChangeHandler = function (event) {
 
 
 ready(function () {
-  let checkboxes = document.querySelectorAll(".checkbox");
+  var checkboxes = document.querySelectorAll(".checkbox");
   checkboxes.forEach(updateCheckbox);
 });
 
